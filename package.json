@@ -1,6 +1,7 @@
 {
   "name": "austin.engineer",
   "version": "0.0.1",
+  "homepage": "https://amcelroy.github.io/austin.engineer/",
   "private": true,
   "scripts": {
     "dev": "vite dev",
