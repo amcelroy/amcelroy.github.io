@@ -1,5 +1,5 @@
 <script>
-import contact_qr from './amcelroy_contact.png';
+    import contact_qr from './amcelroy_contact.png';
 </script>
 
 <div class="center">

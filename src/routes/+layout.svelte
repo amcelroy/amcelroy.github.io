@@ -2,6 +2,9 @@
 	import '../app.postcss';
 	import { AppShell, AppBar, AppRail, AppRailAnchor } from '@skeletonlabs/skeleton';
 	import Icon from '@iconify/svelte';
+
+	export const prerender = true;
+	//export const ssr = false;
 </script>
 
 <!-- App Shell -->
