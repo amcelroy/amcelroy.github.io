@@ -4,6 +4,7 @@
 	import Icon from '@iconify/svelte';
 
 	export const prerender = true;
+	export const trailingSlash = 'always';
 	//export const ssr = false;
 </script>
 
