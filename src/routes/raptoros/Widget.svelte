@@ -1,11 +1,8 @@
 <script lang="ts">
-    import Units from "./Units.svelte";
-    import { UNITS_FARAD, UNITS_OHM } from "./units";
-
    export let name: string;
 </script>
 
-<div class="card card-hover widget">
+<div class="card card-hover widget variant-glass-primary">
     <header class="card-header">{name}</header>
     <section class="p-4">
         <slot/>

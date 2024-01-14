@@ -5,6 +5,8 @@
 
 	export const prerender = true;
 	export const trailingSlash = 'always';
+
+	import { page } from '$app/stores';
 	//export const ssr = false;
 </script>
 
@@ -12,17 +14,29 @@
 <AppShell>
 	<svelte:fragment slot="sidebarLeft">
 		<AppRail>
-			<AppRailAnchor href="/art" selected={false} name="Art">
+			<AppRailAnchor href="/" selected={$page.url.pathname === '/'}>
+				<svelte:fragment slot="lead">
+					<Icon icon="solar:home-outline" style="font-size: 24px;"/>
+				</svelte:fragment>
+				<span>Home</span>
+			</AppRailAnchor>
+			<AppRailAnchor href="/projects" selected={$page.url.pathname === '/projects'}>
+				<svelte:fragment slot="lead">
+					<Icon icon="octicon:project-symlink-16" style="font-size: 24px;"/>
+				</svelte:fragment>
+				<span>Projects</span>
+			</AppRailAnchor>
+			<AppRailAnchor href="/art" selected={$page.url.pathname === '/art'}>
 				<svelte:fragment slot="lead">
 					<Icon icon="mdi:paint-outline" style="font-size: 24px;"/>
 				</svelte:fragment>
 				<span>Art</span>
 			</AppRailAnchor>
-			<AppRailAnchor href="/tools" selected={false}>
+			<AppRailAnchor href="/raptoros" selected={$page.url.pathname === '/raptoros'}>
 				<svelte:fragment slot="lead">
-					<Icon icon="carbon:build-tool" style="font-size: 24px;"/>
+					<Icon icon="game-icons:velociraptor" style="font-size: 24px;"/>
 				</svelte:fragment>
-				<span>Tools</span>
+				<span>RaptorOS</span>
 			</AppRailAnchor>
 		</AppRail>
 	</svelte:fragment>

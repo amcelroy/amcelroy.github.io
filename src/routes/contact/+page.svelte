@@ -3,7 +3,7 @@
 </script>
 
 <div class="center">
-    <img class="scaled_image" src={contact_qr}>
+    <img class="scaled_image" src={contact_qr} alt="Contact QR Code">
 </div>
 
 <style>
@@ -15,8 +15,8 @@
 
 .scaled_image {
   width: auto;
-  min-height: 256px;
-  max-height: 768px;
+  min-height: 512px;
+  max-height: 512px;
 }
 
 </style>

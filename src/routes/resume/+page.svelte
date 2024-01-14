@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    //import PdfViewer from 'svelte-pdf';
     import resume from './amcelroy_cv.pdf';
 
     let PdfViewer: any;

@@ -2,7 +2,9 @@
     
 </script>
 
-<p>Art</p>
+<h1>
+    Art
+</h1>
 
 <style> 
 
