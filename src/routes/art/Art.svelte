@@ -5,7 +5,7 @@
     export let description: string;
 </script>
 
-<div class="card card-gover art">
+<div class="card card-hover art">    
     <AccordionItem>
         <!-- <svelte:fragment slot="lead">(icon)</svelte:fragment> -->
         <svelte:fragment slot="summary">{title}</svelte:fragment>

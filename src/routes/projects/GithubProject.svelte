@@ -3,25 +3,24 @@
     import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 
     export let header: string;
-    export let description: string;
-    export let url: string;
 </script>
 
-<div class="card card-hover">
-    <Accordion>
-        <AccordionItem open>
-            <svelte:fragment slot="lead">{header}</svelte:fragment>
-            <svelte:fragment slot="summary">{header}</svelte:fragment>
-            <svelte:fragment slot="content">{description}</svelte:fragment>
-        </AccordionItem>
-    </Accordion>
+<div class="project">
+    <AccordionItem>
+        <svelte:fragment slot="lead">
+            <Icon icon="mdi:github" width="64"/>
+        </svelte:fragment>
+        <svelte:fragment slot="summary">{header}</svelte:fragment>
+        <svelte:fragment slot="content">
+            <slot/>
+        </svelte:fragment>
+    </AccordionItem>
 </div>
 
 <style>
     .project {
         min-width: 128px;
         max-width: 100%;
-        width: 512px;
+        width: 100%;
     }
-
 </style>

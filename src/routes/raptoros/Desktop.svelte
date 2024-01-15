@@ -2,13 +2,26 @@
     import { onMount } from "svelte";
     import Application from "./Application.svelte";
 
-    function onClickBitlib() {
+    import { Task, TaskManager } from "./tasks";
 
+    let task_manager: TaskManager = new TaskManager();
+
+    $: tasks = [];
+
+    function onSpawn(name: string) {
+        let uuid = task_manager.spawn(name);
+        tasks = task_manager.getTasks();
+        console.log(`Spawning Application with UUID: ${uuid}`);
+    }
+
+    function onApplicationClose(event: CustomEvent<string>){
+        task_manager.closeTask(event.detail);
+        tasks = task_manager.getTasks();
+        console.log(`Closing Application UUID: ${event.detail}`);
     }
 
     onMount(() => {
         const tuicss = import("./tuicss");
-        //datetimeController();
     });
 </script>
 
@@ -18,7 +31,7 @@
             <span class="red-168-text">A</span>pplications
             <div class="tui-dropdown-content">
                 <ul>
-                    <li><button on:click={onClickBitlib}><span class="red-168-text">B</span>itlib</button></li>
+                    <li><button on:click={() => { onSpawn("bitlib") }}><span class="red-168-text">B</span>itlib</button></li>
                 </ul>
             </div>
         </li>
@@ -26,7 +39,9 @@
     </ul>
 </nav>
 <div class="tui-bg-blue-white main">
-    <Application name="Bitlib"/>
+    {#each tasks as task, i}
+        <Application name={task.name + '_' + task.instance} uuid={task.uuid} top={i*32} left={i*32} on:close={onApplicationClose}/>
+    {/each}
 </div>
 
 
