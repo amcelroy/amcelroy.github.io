@@ -10,13 +10,13 @@
 .center {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
 }
 
 .scaled_image {
   width: auto;
-  min-height: 512px;
-  max-height: 512px;
+  min-height: 368px;
+  max-height: 368px;
 }
 
 </style>
