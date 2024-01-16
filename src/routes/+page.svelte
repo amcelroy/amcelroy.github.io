@@ -2,7 +2,7 @@
 
 </script>
 
-<div class="card intro">
+<div class="card intro variant-glass-primary">
     <p>
         This website is a work in progress. This is a SvelteKit SSR project compiled as a static site and hosted 
         on Github Pages. It is a place to showcase my work and hobbies and keep some engineering tools handy. Check out 

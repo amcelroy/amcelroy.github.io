@@ -5,7 +5,7 @@
 </script>
 
 
-<div class="card card-hover projects">
+<div class="card card-hover projects variant-glass-secondary">
     <Accordion>
         <GithubProject 
             header="amcelroy.github.io" >

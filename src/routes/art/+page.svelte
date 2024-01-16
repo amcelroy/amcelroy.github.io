@@ -4,7 +4,7 @@
 
 </script>
 
-<div class="allart card">
+<div class="allart card variant-glass-secondary">
     <p>
         My 2024 New Years resolution was to paint one painting a week in an effort to learn some new art skills.
         I really like watercolor paintings for the pastels and the chaos that comes from the surface tension of 
