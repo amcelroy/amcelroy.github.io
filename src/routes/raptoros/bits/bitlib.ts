@@ -1,21 +1,29 @@
 export class BitLib {
     signed: boolean;
-    bits: number;
+    bits: boolean[];
     value: number;
     max: number;
     min: number;
 
-    constructor(bits: number, signed: boolean) {
+    constructor(bits: boolean[], signed: boolean) {
         this.bits = bits;
         this.signed = signed;
         this.value = 0;
 
         if(signed) {
-            this.max = (1 << (bits - 1)) - 1;
-            this.min = -(1 << (bits - 1));
+            this.max = 2 ** (bits.length - 1) - 1;
+            this.min = -(2 ** (bits.length - 1));
         }else{
-            this.max = (1 << bits) - 1;
+            this.max = 2 ** bits.length - 1;
             this.min = 0;
+        }
+
+        if(this.signed) {
+
+        }else{
+            this.bits.forEach((bit: boolean, index: number) => {
+                this.value += bit ? 2 ** (index) : 0;
+            });
         }
     }
 
@@ -32,19 +40,8 @@ export class BitLib {
     }
 
     getValue(): number {
+
+
         return this.value;
     }
-
-    getBit(position: number): boolean {
-        return (this.value >> position) == 1;
-    }
-
-    setBit(position: number, value: boolean) {
-        if (value) {
-            this.value |= (1 << position);
-        } else {
-            this.value &= ~(1 << position);
-        }
-    }
-
 }

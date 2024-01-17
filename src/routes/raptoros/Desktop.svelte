@@ -42,7 +42,7 @@
 <div class="tui-bg-blue-white main">
     {#each tasks as task, i}
         <Application name={task.name + '_' + task.instance} uuid={task.uuid} top={i*32} left={i*32} width={640} height={256} on:close={onApplicationClose}>
-            <BitManipulation bits={8} signed={false} />
+            <BitManipulation />
         </Application>
     {/each}
 </div>

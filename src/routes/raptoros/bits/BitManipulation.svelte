@@ -8,16 +8,24 @@
     
     let finalized = false;
 
-    let bitLib: BitLib = new BitLib(bits, signed);
-    $: value = bitLib.getValue();
+    $: value = 0;
 
-    function onBitsChanged(event: CustomEvent<number>) {
-        bits = event.detail;
-        bitLib = new BitLib(bits, signed);
+    let bitArray: boolean[] = [];
+
+    function onBitsChanged(event: CustomEvent<[[boolean, number]]>) {
+        bitArray[event.detail[1]] = event.detail[0];
+        let bitLib: BitLib = new BitLib(bitArray, signed);
         value = bitLib.getValue();
     }
 
+    function onSignedChanged(sign: boolean) {
+        signed = sign;
+    }
+
     function onContinueClick() {
+        for(let i = 0; i < bits; i++){
+            bitArray.push(0);
+        }
         finalized = true;
     }
     
@@ -42,11 +50,11 @@
         <br/>
         <fieldset class="tui-input-fieldset">
             <label class="tui-radio">Signed
-                <input type="radio" name="sign" on:select={() => {signed = true;}} checked/>
+                <input type="radio" name="sign" on:click={() => {onSignedChanged(true);}} checked/>
                 <span></span>
             </label>
             <label class="tui-radio">Unsigned
-                <input type="radio" name="sign" on:select={() => {signed = false;}}/>
+                <input type="radio" name="sign" on:click={() => {onSignedChanged(false);}}/>
                 <span></span>
             </label>
         </fieldset>
@@ -54,11 +62,16 @@
         <button class="tui-button" on:click={onContinueClick}>Continue</button>
     </div>
 {:else}
-    <input class="input number" type="number" placeholder="Value" bind:value={value} />
+    <input class="tui-input number" type="number" placeholder="Value" bind:value={value} />
     <br/>
-    {#each Array(bits) as _, i}
-        <Bit bit={bitLib.getBit(i)} bit_number={bits - i - 1} on:change={onBitsChanged} />
-    {/each}
+    <div>
+        <fieldset class="tui-input-fieldset" style="width: 480px;">
+            <legend>Bits 7 to 0</legend>
+                {#each Array(bits) as _, i}
+                    <Bit bit={bitArray[bits - i - 1]} bit_number={bits - i - 1} on:change={onBitsChanged} />
+                {/each}
+        </fieldset>
+    </div>
 {/if}
 
 
