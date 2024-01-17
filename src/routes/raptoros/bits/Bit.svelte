@@ -12,7 +12,7 @@
     }
 </script>
 
-<button class="card variant-glass-primary bit" on:click={onClick}>
+<button class="bit" on:click={onClick}>
 {#if !bit}
 <pre>
 [ ]

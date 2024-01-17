@@ -3,6 +3,7 @@
     import Application from "./Application.svelte";
 
     import { Task, TaskManager } from "./tasks";
+    import BitManipulation from "./bits/BitManipulation.svelte";
 
     let task_manager: TaskManager = new TaskManager();
 
@@ -40,7 +41,9 @@
 </nav>
 <div class="tui-bg-blue-white main">
     {#each tasks as task, i}
-        <Application name={task.name + '_' + task.instance} uuid={task.uuid} top={i*32} left={i*32} on:close={onApplicationClose}/>
+        <Application name={task.name + '_' + task.instance} uuid={task.uuid} top={i*32} left={i*32} width={640} height={256} on:close={onApplicationClose}>
+            <BitManipulation bits={8} signed={false} />
+        </Application>
     {/each}
 </div>
 

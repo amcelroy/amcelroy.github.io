@@ -58,7 +58,11 @@ export class TaskManager {
         tasks.forEach((task: Task) => {
             task_instance.push(task.instance);
         });
-        let max = Math.max(...task_instance);
+
+        let max = 0;
+        if (task_instance.length > 0) {
+            max = Math.max(...task_instance);
+        }
 
         let uuid = uuidv4();
         let new_task = new Task(name, max + 1, uuid);
