@@ -7,8 +7,6 @@
     export let uuid: string;
     export let top: number = 24;
     export let left: number = 24;
-    export let height: number = 256;
-    export let width: number = 512;
 
     let drag_focus: boolean = false;
 
@@ -47,7 +45,7 @@
             <button class="tui-fieldset-button" on:click={onMouseDownClose}>
                 <span class="green-255-text">X</span>
             </button>
-            <div style="width: {width}px; height: {height}px;">
+            <div>
                 <slot/>
             </div>
         </fieldset>

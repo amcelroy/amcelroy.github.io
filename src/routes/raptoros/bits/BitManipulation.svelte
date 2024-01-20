@@ -1,32 +1,33 @@
 <script lang="ts">
     import Bit from "./Bit.svelte";
     import { onMount } from "svelte";
-    import { BitLib } from "./bitlib";
+    import { BitLib, type IBitsChanged } from "./bitlib";
+    import BitGrouping from "./BitGrouping.svelte";
 
     let bits: number = 8;
-    let signed: boolean = true;
     
     let finalized = false;
 
-    $: value = 0;
+    let value: number = 0;
+    $: value_0_7 = 0;
+    let value_8_15: number = 0;
+    let value_16_23: number = 0;
+    let value_24_31: number = 0;
+
+    $: value = value_0_7;
 
     let bitArray: boolean[] = [];
 
-    function onBitsChanged(event: CustomEvent<[[boolean, number]]>) {
-        bitArray[event.detail[1]] = event.detail[0];
-        let bitLib: BitLib = new BitLib(bitArray, signed);
-        value = bitLib.getValue();
-    }
-
-    function onSignedChanged(sign: boolean) {
-        signed = sign;
-    }
-
     function onContinueClick() {
         for(let i = 0; i < bits; i++){
-            bitArray.push(0);
+            bitArray.push(false);
         }
         finalized = true;
+    }
+
+    function onBitGroupingChanged(event: any) {
+        let changes = event.detail as IBitsChanged;
+        console.log(changes);
     }
     
 </script>
@@ -46,37 +47,27 @@
                 <input type="radio" name="bits" on:select={() => {bits = 32;}} />
                 <span></span>
             </label>
-        </fieldset>
-        <br/>
-        <fieldset class="tui-input-fieldset">
-            <label class="tui-radio">Signed
-                <input type="radio" name="sign" on:click={() => {onSignedChanged(true);}} checked/>
-                <span></span>
-            </label>
-            <label class="tui-radio">Unsigned
-                <input type="radio" name="sign" on:click={() => {onSignedChanged(false);}}/>
+            <label class="tui-radio">64-bit
+                <input type="radio" name="bits" on:select={() => {bits = 64;}} />
                 <span></span>
             </label>
         </fieldset>
         <br/>
-        <button class="tui-button" on:click={onContinueClick}>Continue</button>
+        <button class="tui-button button_margin" on:click={onContinueClick}>Continue</button>
     </div>
 {:else}
-    <input class="tui-input number" type="number" placeholder="Value" bind:value={value} />
+    <input class="tui-input number" type="number" placeholder="Value" bind:value />
     <br/>
-    <div>
-        <fieldset class="tui-input-fieldset" style="width: 480px;">
-            <legend>Bits 7 to 0</legend>
-                {#each Array(bits) as _, i}
-                    <Bit bit={bitArray[bits - i - 1]} bit_number={bits - i - 1} on:change={onBitsChanged} />
-                {/each}
-        </fieldset>
-    </div>
+    <BitGrouping startBit={0} on:change={onBitGroupingChanged} value={value_0_7}/>
 {/if}
 
 
 
 <style>
     @import "../tuicss.css";
+
+    .button_margin {
+        margin: 8px;
+    }
 
 </style>

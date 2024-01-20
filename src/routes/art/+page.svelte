@@ -44,6 +44,11 @@
             <iframe src="https://drive.google.com/file/d/1BercaKiLgDfAcIUgaUDnfS5i7gPhKPYD/preview" width="640" height="480" allow="autoplay"></iframe>
             <iframe src="https://drive.google.com/file/d/1sJbYuOQCu-UeDmXzwPzQoXdnESQRs1BC/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
+        <Art title="Liam, on a hill" description="I was trying out some new paper and pigments and decided to paint a picture my wife mentioned
+            that she enjoyed. There were more buildings in the background in the original, but I wasn't confident enough to attempt them. However, 
+            the Google sail building made it. I also added a tree to make things a little more colorful.">
+            <iframe src="https://drive.google.com/file/d/19nILblexYqnwTuucn4wIJ3fhif2X-ndg/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
     </Accordion>
 </div>
 
