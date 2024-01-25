@@ -5,45 +5,64 @@
 
     const dispatch = createEventDispatcher<{change: IBitsChanged}>()
 
-    export let value: number = 0;
-
-    $: hexValue = "0";
-    $: decValue = 0;
-    $: {
-        onValueChanged(value);
-    }
-    
-    let bitArray: boolean[] = [];
-
-    let bitLib: BitLib = new BitLib(bitArray, false);
-
+    export let input: number;
     export let startBit: number;
 
-    function onValueChanged(newValue: number) {
-        decValue = newValue;
-        bitLib.setValue(decValue);
-        hexValue = decValue.toString(16).padStart(2, '0');
-        bitArray = bitLib.getBits();
+    $: update(UpdatedValue.INPUT, input);
+    $: bitArray = [];
+    $: decValue = 0;
+    $: hexValue = "";
+
+    let bitLib: BitLib = new BitLib(8, false);
+
+    enum UpdatedValue {
+        BIT_ARRAY,
+        HEX,
+        DEC,
+        INPUT,
     }
 
-    function dispatchChange() {
+    function update(uv: UpdatedValue, value: number | string | boolean[]) {
+        switch(uv) {
+            case UpdatedValue.BIT_ARRAY:
+                bitLib.setBits(value);
+                decValue = bitLib.getValue();
+                hexValue = bitLib.getHex();
+                input = decValue;
+                break;
+            case UpdatedValue.HEX:
+                bitLib.setValueHex(value);
+                decValue = bitLib.getValue();
+                bitArray = bitLib.getBits();
+                input = decValue;
+                break;
+            case UpdatedValue.DEC:
+                bitLib.setValue(value);
+                hexValue = bitLib.getHex();
+                bitArray = bitLib.getBits();
+                input = decValue;
+                break;
+            case UpdatedValue.INPUT:
+                bitLib.setValue(value);
+                decValue = bitLib.getValue();
+                hexValue = bitLib.getHex();
+                bitArray = bitLib.getBits();
+                break;
+        }
         dispatch("change", {bits: bitArray, startBit} as IBitsChanged);
+    }
+
+    function onValueChanged(newValue: number) {
+        update(UpdatedValue.INPUT, newValue);
     }
 
     function onBitsChanged(event: CustomEvent<[boolean, number]>) {
         bitArray[event.detail[1]] = event.detail[0];
-        bitLib.setBits(bitArray);
-        decValue = bitLib.getValue();
-        hexValue = decValue.toString(16).padStart(2, '0');
-        dispatchChange();
+        update(UpdatedValue.BIT_ARRAY, bitArray);
     }
 
     function onDecValueChanged() {
-        bitLib.setValue(decValue);
-        hexValue = decValue.toString(16).padStart(2, '0');
-        onHexValueChanged();
-        bitArray = bitLib.getBits();
-        dispatchChange();
+        update(UpdatedValue.DEC, decValue);
     }
 
     function onHexValueChanged() {
@@ -54,10 +73,7 @@
 
         if(isHex){
             input.classList.remove("bit_group_error");
-            decValue = Number('0x' + hexValue);
-            bitLib.setValue(decValue);
-            bitArray = bitLib.getBits();
-            dispatchChange();
+            update(UpdatedValue.HEX, hexValue);            
         }else{
             input.classList.add("bit_group_error");
         }
