@@ -49,6 +49,11 @@
             the Google sail building made it. I also added a tree to make things a little more colorful.">
             <iframe src="https://drive.google.com/file/d/19nILblexYqnwTuucn4wIJ3fhif2X-ndg/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
+        <Art title="Colorful Winter Sunrise" description="This was the next painting style in the book. I think it turned out really nice! I like the 
+            subtle yellow against the snow. The tree and shadow is also a more complex technique I've not used before.">
+            <iframe src="https://drive.google.com/file/d/1My8OiLdggiGwcotA5l7Kz7WYRcFKXepW/preview" width="640" height="480" allow="autoplay"></iframe>
+    </Art>
+
     </Accordion>
 </div>
 
