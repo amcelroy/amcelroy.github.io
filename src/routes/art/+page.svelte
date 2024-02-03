@@ -52,7 +52,15 @@
         <Art title="Colorful Winter Sunrise" description="This was the next painting style in the book. I think it turned out really nice! I like the 
             subtle yellow against the snow. The tree and shadow is also a more complex technique I've not used before.">
             <iframe src="https://drive.google.com/file/d/1My8OiLdggiGwcotA5l7Kz7WYRcFKXepW/preview" width="640" height="480" allow="autoplay"></iframe>
-    </Art>
+        </Art>
+        <Art title="Pine tree at sunset, and Marble Countertops" description="I bought some new brushes and wanted to test them out bit not commit
+            to the next chapter in the watercolor book. It was fun to test them out, they are more circular and hold water differently than the flatter
+            brushes. The marble is the latest pattern my wife has zeroed in on for countertops. I'm not sure about it but she seems dead set since
+            Lowe's has a nice display that showcases how she sees the counters / kitchen.">
+            <iframe src="https://drive.google.com/file/d/1MDgN9M5D1ChsEVokELZME_K1AklloHIE/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
+
+        
 
     </Accordion>
 </div>
