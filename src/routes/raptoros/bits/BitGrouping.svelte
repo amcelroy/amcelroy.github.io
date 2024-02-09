@@ -78,6 +78,32 @@
             input.classList.add("bit_group_error");
         }
     }
+
+    function leftShift() {
+        decValue = decValue << BigInt(1);
+        if(decValue > 255){
+            decValue = BigInt(255);
+        }
+        update(UpdatedValue.DEC, decValue);
+    }
+
+    function rightShift() {
+        decValue = decValue >> BigInt(1);
+        if(decValue < 0){
+            decValue = BigInt(0);
+        }
+        update(UpdatedValue.DEC, decValue);
+    }
+
+    function zeros() {
+        decValue = BigInt(0);
+        update(UpdatedValue.DEC, decValue);
+    }
+
+    function ones() {
+        decValue = BigInt(255);
+        update(UpdatedValue.DEC, decValue);
+    }
 </script>
 
 <div>
@@ -92,6 +118,10 @@
         <div class="number_pad" id="hex_{startBit}">
             0x  <input class="tui-input hex_number" type="text" placeholder="Value" maxlength="2" bind:value={hexValue} on:change={onHexValueChanged} pattern="[a-fA-F\d]+"/> Hex
         </div>
+        <button class="tui-button number_pad" on:click={leftShift}>&lt&lt;</button>
+        <button class="tui-button number_pad" on:click={rightShift}>&gt&gt;</button>
+        <button class="tui-button number_pad" on:click={zeros}>0's</button>
+        <button class="tui-button number_pad" on:click={ones}>1's</button>
     </fieldset>
 </div>
 
