@@ -59,8 +59,13 @@
             Lowe's has a nice display that showcases how she sees the counters / kitchen.">
             <iframe src="https://drive.google.com/file/d/1MDgN9M5D1ChsEVokELZME_K1AklloHIE/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
-
-        
+        <Art title="Birthday painting for my wife" description="I painted this for my wife's birthday based on her work for our
+            neighborhood ceramic art wall that was a community effort. She worked on the 3 red flowers (Her, Liam, and Me), and the pink flower (her 
+            sister), and purple flower (her mom). It feels kind of basic. I need to get back to working on the book, but time
+            is elusive, or more likely the next painting is intimidating and I'm procrastinating...">
+            <iframe src="https://drive.google.com/file/d/1YiC6psDHZTRIsEWyyWqFXDRTtJ4hkfMe/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1JIGaAcjus7FDCwNiRahCWjv3KeS3HkZb/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>        
 
     </Accordion>
 </div>

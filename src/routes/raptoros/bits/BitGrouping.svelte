@@ -49,7 +49,7 @@
                 bitArray = bitLib.getBits();
                 break;
         }
-        dispatch("change", {bits: bitArray, startBit} as IBitsChanged);
+        dispatch("change", {bits: bitArray, startBit, value: decValue} as IBitsChanged);
     }
 
     function onValueChanged(newValue: number) {
@@ -80,28 +80,28 @@
     }
 
     function leftShift() {
-        decValue = decValue << BigInt(1);
+        decValue = decValue << 1;
         if(decValue > 255){
-            decValue = BigInt(255);
+            decValue = 255;
         }
         update(UpdatedValue.DEC, decValue);
     }
 
     function rightShift() {
-        decValue = decValue >> BigInt(1);
+        decValue = decValue >> 1;
         if(decValue < 0){
-            decValue = BigInt(0);
+            decValue = 0;
         }
         update(UpdatedValue.DEC, decValue);
     }
 
     function zeros() {
-        decValue = BigInt(0);
+        decValue = 0;
         update(UpdatedValue.DEC, decValue);
     }
 
     function ones() {
-        decValue = BigInt(255);
+        decValue = 255;
         update(UpdatedValue.DEC, decValue);
     }
 </script>

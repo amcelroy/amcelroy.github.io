@@ -28,8 +28,8 @@
 
 <style>
     .bit {
-        width: 48px;
+        width: 32px;
         height: 48px;
-        margin: 4px;
+        margin: 2px;
     }
 </style>
