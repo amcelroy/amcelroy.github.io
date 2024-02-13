@@ -38,12 +38,12 @@
 				</svelte:fragment>
 				<span>RaptorOS</span>
 			</AppRailAnchor>
-			<AppRailAnchor href="/dads" selected={$page.url.pathname === '/dads'}>
+			<!-- <AppRailAnchor href="/dads" selected={$page.url.pathname === '/dads'}>
 				<svelte:fragment slot="lead">
 					<Icon icon="gis:contour-map" style="font-size: 24px;"/>
 				</svelte:fragment>
 				<span>Dad's Project</span>
-			</AppRailAnchor>
+			</AppRailAnchor> -->
 		</AppRail>
 	</svelte:fragment>
 	<svelte:fragment slot="header">

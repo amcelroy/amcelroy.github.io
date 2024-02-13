@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
     import { onMount } from 'svelte';
 
 
@@ -24,4 +24,4 @@
         height: 90vh;
     }
 
-</style>
+</style> -->
