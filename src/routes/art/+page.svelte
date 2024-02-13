@@ -65,7 +65,13 @@
             is elusive, or more likely the next painting is intimidating and I'm procrastinating...">
             <iframe src="https://drive.google.com/file/d/1YiC6psDHZTRIsEWyyWqFXDRTtJ4hkfMe/preview" width="640" height="480" allow="autoplay"></iframe>
             <iframe src="https://drive.google.com/file/d/1JIGaAcjus7FDCwNiRahCWjv3KeS3HkZb/preview" width="640" height="480" allow="autoplay"></iframe>
-        </Art>        
+        </Art>      
+        <Art title="Twenty-Three" description="My wife and I have had 23 Valentine's days together since we first met
+            in the year 2000 at the Capital Area Food Bank for a Freshman Honor's Society event. I painted 23 hearts
+            to represent the 23 valentine's days we've had. I realized my improv art ability still needs a lot of work
+            and I need to develop outside the nature scene book as well. Time for another book?">
+            <iframe src="https://drive.google.com/file/d/1xymQInrFj-GeY7WyTdJVUqLev4eN97SN/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>      
 
     </Accordion>
 </div>
