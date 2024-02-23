@@ -71,8 +71,13 @@
             to represent the 23 valentine's days we've had. I realized my improv art ability still needs a lot of work
             and I need to develop outside the nature scene book as well. Time for another book?">
             <iframe src="https://drive.google.com/file/d/1xymQInrFj-GeY7WyTdJVUqLev4eN97SN/preview" width="640" height="480" allow="autoplay"></iframe>
-        </Art>      
-
+        </Art>    
+        <Art title="Flowers" description="Ha, still putting off the next landscape. Sara's mom got here these flowers
+            for Sara's birthday. I kind of ran out of time this week because I am working on a new hobby project but
+            still carved out an hour to paint.">
+            <iframe src="https://drive.google.com/file/d/1Kp8aKjGfsSt_BeVv9cDr4VIA8_FDOnpL/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/181R6LJRKyYhuLcsKzyOqLoXY_5oaF-KU/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>        
     </Accordion>
 </div>
 
