@@ -1,4 +1,4 @@
-<!-- <script lang="ts">
+<script lang="ts">
     import { onMount } from 'svelte';
 
 
@@ -12,7 +12,7 @@
 
 </script>
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=11mHYSuNKCLLDkMLImVfxbFqwinAQEW0&ehbc=2E312F&noprof=1" 
+<iframe src="https://www.google.com/maps/d/embed?mid=1DSPPBPCcPjuzuJHF2B6FeMO2TtNds0w&ehbc=2E312F" 
     id="map"
     class="map"
     title="Dad's Project Map of Vietnam"
@@ -24,4 +24,4 @@
         height: 90vh;
     }
 
-</style> -->
+</style>
