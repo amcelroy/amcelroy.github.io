@@ -83,6 +83,11 @@
             that information, it was a great moment. I painted the flowers this week as a reminder of that moment.">
             <iframe src="https://drive.google.com/file/d/1o_GTdp76Pj1wxeIv3VNvHw3J7bjHN6kC/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
+        <Art title="West Texas Pines" description="Liam and I went camping with a group last week out in West Texas at Ratcliff Lake. It was
+            a gorgeous site. The sunsets looked stunning, blue and red mixing above and through the trees.">
+            <iframe src="https://drive.google.com/file/d/1pXlojjqMn4WzPHupqjhu87y7PSjIVBvT/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/10LCpXwWHCLBw3KC9DojdhdNbm-oWIYBa/preview" width="640" height="480" allow="autoplay"></iframe>
+         </Art>
     </Accordion>
 </div>
 
