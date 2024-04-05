@@ -88,6 +88,12 @@
             <iframe src="https://drive.google.com/file/d/1pXlojjqMn4WzPHupqjhu87y7PSjIVBvT/preview" width="640" height="480" allow="autoplay"></iframe>
             <iframe src="https://drive.google.com/file/d/10LCpXwWHCLBw3KC9DojdhdNbm-oWIYBa/preview" width="640" height="480" allow="autoplay"></iframe>
          </Art>
+         <Art title="Kerbel Space Program" description="I've been falling behind a bit on my one a week goal. I've been working on 
+            another project in my free time I've dubbed Wintermute, partially inspired by Neuromancer (William Gibson). However,
+            I do have time to paint for my nephew! His birthday is coming up and I'm going to get him Kerbel Space Program,
+            which also made a cute card idea.">
+            <iframe src="https://drive.google.com/file/d/1UBWgNnag-Y-uNIIcNrPOYPQPV8Bh7HHg/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
     </Accordion>
 </div>
 
