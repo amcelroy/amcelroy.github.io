@@ -94,6 +94,18 @@
             which also made a cute card idea.">
             <iframe src="https://drive.google.com/file/d/1UBWgNnag-Y-uNIIcNrPOYPQPV8Bh7HHg/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
+        <Art title="Week 18 - Mother's Day" description="I painted 2 pictures this week, one for Sara and one
+            for my sister. Sara's ended up a little less than I wanted, but is more meaningful, it is the stuff
+            that she does for the family that she typically takes care of. Shopping for food, Liam's doctors appointments,
+            the lawn, and Liam's laundry. She also helped win Trashion Fashion with Liam, for which he won a trophy, so I tried
+            to incorporate that as well. I'm not really used to drawing items, so I think it looks a little sophmoric.
+
+            Mariah's though, it turned out great! It is a picture of the eclipse, which she spent a lot of time organizing
+            and planning for. It was an amazing, amazing family event that I'm really proud of her for pulling together
+            and sharing with everyone.">
+            <iframe src="https://drive.google.com/file/d/1rlKUEY1AAyMe16cMOyx_DRn5Use86ys3/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1HkMlQB9o9yczXTRm7sra6HNvj8YDA5gb/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
     </Accordion>
 </div>
 
