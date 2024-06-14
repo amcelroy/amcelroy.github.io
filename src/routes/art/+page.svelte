@@ -106,6 +106,11 @@
             <iframe src="https://drive.google.com/file/d/1rlKUEY1AAyMe16cMOyx_DRn5Use86ys3/preview" width="640" height="480" allow="autoplay"></iframe>
             <iframe src="https://drive.google.com/file/d/1HkMlQB9o9yczXTRm7sra6HNvj8YDA5gb/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
+        <Art title="Father's Day" description="Happy Father's Day! My dad just finished several semesters at ACC working through all things GIS. 
+            Mapping, estimating excavations, LIDAR, and so much more. His passion project has been mapping certain incidents in the Vietnam War
+            and all of his classes at ACC have gone to that. Way to go dad, I'm proud of you!">
+            <iframe src="https://drive.google.com/file/d/16jYaecd8T8xJzVeOYI2to7zcYkcOAjYW/preview" width="640" height="480" allow="autoplay"></iframe>
+    </Art>
     </Accordion>
 </div>
 
