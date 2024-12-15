@@ -15,8 +15,9 @@
     <p>
         I have a B.S. in Electrical Engineer from the University of Texas, Austin, and finished up a M.S.E.E at UT during
         the COVID pandemic. My masters thesis was part of a team; I designed the circuit board and firmware for a low-cost bridge 
-        ventilator unit. The team was lead by Dr. Thomas Milner, Dr. Johnathan Valvano, Dr. Van Trusket, and many, many others. 
-        Thought we moved fast, the vaccine came out as we were submitting the device to the FDA under the emergancy authorization
+        ventilator unit. The team was lead by Dr. Thomas Milner and Dr. Johnathan Valvano and couldn't have been completed without
+        the help of a lot of other people. 
+        Though we moved fast, the vaccine came out as we were submitting the device to the FDA under the emergancy authorization
         act and it was deemed not needed. Regardless, it was an amazing experience that made us feel empowered during a time of a 
         lot of uncertainty.
     </p>
@@ -30,10 +31,9 @@
     <br/>
 
     <p>
-        I'm a Staff Scientist for a company called BridgeSource medical. We write NIH grants and do the research
-        and engineering work, so there are always a lot of diverse projects going on. I primarily write firmware for 
-        microcontrollers and GUI visualization software for desktops using Rust, but also work regularly in C, C++, Svelte,
-        Flutter, and Python. 
+        I'm a Senior Software Engineer at Pictorus working on bringing Rust to model based design system for embedded systems. My current task is trying
+        to absorb as much of the software base as I can, implement new hardware protocols, PCB design, and helping re-write an open source implementation of 
+        the Rust project. It has been an amazing learning experience for CI/CD, Rust, generated code, and more. 
     </p>
 
     <br/>
