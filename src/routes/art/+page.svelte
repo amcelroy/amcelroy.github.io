@@ -110,7 +110,36 @@
             Mapping, estimating excavations, LIDAR, and so much more. His passion project has been mapping certain incidents in the Vietnam War
             and all of his classes at ACC have gone to that. Way to go dad, I'm proud of you!">
             <iframe src="https://drive.google.com/file/d/16jYaecd8T8xJzVeOYI2to7zcYkcOAjYW/preview" width="640" height="480" allow="autoplay"></iframe>
-    </Art>
+        </Art>
+        <Art title="Christmas for Mariah and In-Laws" description="It has been a while. I did some paintings when I left BSM
+            but never posted them. I got a 3D printer just before the holidays and have been enjoying messing around with
+            printing gifts and art ideas. One idea I had was to create masks I could use for watercolor paintings. My in-laws 
+            hippies at heart, my wife's dad and 2nd wife love the peace movement and peace sign. I made a mask for a peace
+            sign and had fun with trying to make vivid colors using small pools of water with pigmant difused in it.
+
+            <p>The Eiffel Tower I painted for my sister, she had just taken a trip to the Netherlands and Paris with a friend
+            and I've been to Paris twice and enjoyed the Eiffel tower both times. It is also iconic and not a spwarling palace
+            so it works with a vertical canvas.</p>">
+            <iframe src="https://drive.google.com/file/d/1vxwe3DUCGzl7qwE5GRCcEGlxuPv4Ez8A/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
+        <Art title="Christmas for Mom" description="This one was for mom. I was going to print a tree shaped as a heart that 
+            I found, except I inverted it in Shapr3d and FreeCAD. I went to print it and all the inversions weren't connected
+            to the main body of the tree and fell off. Oops. I will keep that in mind next time I decide to invert a model.
+
+            I made the most of it and split the heart into 3, once color for Sara, Liam, and me and tried to turn them into
+            flowers that connected in the center. My sister got me a nice book for Christmas about using ink with watercolor
+            to help with lines and masking, and I think some of those techniques would have made this one pop more.
+
+            Regardless, I was pretty proud of it!">
+            <iframe src="https://drive.google.com/file/d/1s6mmseUxGPAH8wtmiefNbA0p-Hj3IOh7/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
+        <Art title="Christmas for Dad" description="For my dad, I made a canndle holder. I printed up these aweseome black ones
+            I found on Thingiverse. They just look super cool with the ribs and spirals. It took a while and a lot of trial
+            and error, but I was able to replicate the look in Shapr3D! It felt really good to figure it out, using an angled
+            body that is mirror about the z-axis and rotated / cloned.">
+            <iframe src="https://drive.google.com/file/d/1MXk3j8MXzty9oqMtHPAXKcmLwAHqdKep/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1ZVkcK3eIfq8BmgwekpNJ373Fi9XtMj2E/preview" width="640" height="480" allow="autoplay"></iframe>    
+        </Art>
     </Accordion>
 </div>
 
