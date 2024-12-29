@@ -90,15 +90,20 @@
             which also made a cute card idea.">
             <iframe src="https://drive.google.com/file/d/1UBWgNnag-Y-uNIIcNrPOYPQPV8Bh7HHg/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
-        <Art title="Week 18 - Mother's Day" description="I painted 2 pictures this week, one for Sara and one
-            for my sister. Sara's ended up a little less than I wanted, but is more meaningful, it is the stuff
-            that she does for the family that she typically takes care of. Shopping for food, Liam's doctors appointments,
-            the lawn, and Liam's laundry. She also helped win Trashion Fashion with Liam, for which he won a trophy, so I tried
-            to incorporate that as well. I'm not really used to drawing items, so I think it looks a little sophmoric.
+        <Art title="Week 18 - Mother's Day">
+            <p>
+                I painted 2 pictures this week, one for Sara and one
+                for my sister. Sara's ended up a little less than I wanted, but is more meaningful, it is the stuff
+                that she does for the family that she typically takes care of. Shopping for food, Liam's doctors appointments,
+                the lawn, and Liam's laundry. She also helped win Trashion Fashion with Liam, for which he won a trophy, so I tried
+                to incorporate that as well. I'm not really used to drawing items, so I think it looks a little sophmoric.
+            </p>
 
-            Mariah's though, it turned out great! It is a picture of the eclipse, which she spent a lot of time organizing
-            and planning for. It was an amazing, amazing family event that I'm really proud of her for pulling together
-            and sharing with everyone.">
+            <p>
+                Mariah's though, it turned out great! It is a picture of the eclipse, which she spent a lot of time organizing
+                and planning for. It was an amazing, amazing family event that I'm really proud of her for pulling together
+                and sharing with everyone.
+            </p>
             <iframe src="https://drive.google.com/file/d/1rlKUEY1AAyMe16cMOyx_DRn5Use86ys3/preview" width="640" height="480" allow="autoplay"></iframe>
             <iframe src="https://drive.google.com/file/d/1HkMlQB9o9yczXTRm7sra6HNvj8YDA5gb/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
@@ -107,26 +112,35 @@
             and all of his classes at ACC have gone to that. Way to go dad, I'm proud of you!">
             <iframe src="https://drive.google.com/file/d/16jYaecd8T8xJzVeOYI2to7zcYkcOAjYW/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
-        <Art title="Christmas for Mariah and In-Laws" description="It has been a while. I did some paintings when I left BSM
-            but never posted them. I got a 3D printer just before the holidays and have been enjoying messing around with
-            printing gifts and art ideas. One idea I had was to create masks I could use for watercolor paintings. My in-laws 
-            hippies at heart, my wife's dad and 2nd wife love the peace movement and peace sign. I made a mask for a peace
-            sign and had fun with trying to make vivid colors using small pools of water with pigmant difused in it.
-
-            <p>The Eiffel Tower I painted for my sister, she had just taken a trip to the Netherlands and Paris with a friend
-            and I've been to Paris twice and enjoyed the Eiffel tower both times. It is also iconic and not a spwarling palace
-            so it works with a vertical canvas.</p>">
+        <Art title="Christmas for Mariah and In-Laws">
+            <p>
+                It has been a while. I did some paintings when I left BSM
+                but never posted them. I got a 3D printer just before the holidays and have been enjoying messing around with
+                printing gifts and art ideas. One idea I had was to create masks I could use for watercolor paintings. My in-laws 
+                hippies at heart, my wife's dad and 2nd wife love the peace movement and peace sign. I made a mask for a peace
+                sign and had fun with trying to make vivid colors using small pools of water with pigmant difused in it.
+            </p>
+            <p>
+                The Eiffel Tower I painted for my sister, she had just taken a trip to the Netherlands and Paris with a friend
+                and I've been to Paris twice and enjoyed the Eiffel tower both times. It is also iconic and not a spwarling palace
+                so it works with a vertical canvas.
+            </p>
             <iframe src="https://drive.google.com/file/d/1vxwe3DUCGzl7qwE5GRCcEGlxuPv4Ez8A/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
-        <Art title="Christmas for Mom" description="This one was for mom. I was going to print a tree shaped as a heart that 
-            I found, except I inverted it in Shapr3d and FreeCAD. I went to print it and all the inversions weren't connected
-            to the main body of the tree and fell off. Oops. I will keep that in mind next time I decide to invert a model.
-
-            I made the most of it and split the heart into 3, once color for Sara, Liam, and me and tried to turn them into
-            flowers that connected in the center. My sister got me a nice book for Christmas about using ink with watercolor
-            to help with lines and masking, and I think some of those techniques would have made this one pop more.
-
-            Regardless, I was pretty proud of it!">
+        <Art title="Christmas for Mom">
+            <p>
+                This one was for mom. I was going to print a tree shaped as a heart that 
+                I found, except I inverted it in Shapr3d and FreeCAD. I went to print it and all the inversions weren't connected
+                to the main body of the tree and fell off. Oops. I will keep that in mind next time I decide to invert a model.
+            </p>
+            <p>
+                I made the most of it and split the heart into 3, once color for Sara, Liam, and me and tried to turn them into
+                flowers that connected in the center. My sister got me a nice book for Christmas about using ink with watercolor
+                to help with lines and masking, and I think some of those techniques would have made this one pop more.
+            </p>
+            <p>
+                Regardless, I was pretty proud of it!
+            </p>
             <iframe src="https://drive.google.com/file/d/1s6mmseUxGPAH8wtmiefNbA0p-Hj3IOh7/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
         <Art title="Christmas for Dad" description="For my dad, I made a canndle holder. I printed up these aweseome black ones

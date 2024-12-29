@@ -2,7 +2,7 @@
     import { ProgressRadial,Accordion, AccordionItem } from "@skeletonlabs/skeleton";
 
     export let title: string;
-    export let description: string;
+    export let description: string = "";
 </script>
 
 <div class="card card-hover art variant-glass-secondary">    
