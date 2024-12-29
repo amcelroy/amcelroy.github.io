@@ -6,21 +6,17 @@
 
 <div class="allart card variant-glass-secondary">
     <p>
-        My 2024 New Years resolution was to paint one painting a week in an effort to learn some new art skills.
-        I really like watercolor paintings for the pastels and the chaos that comes from the surface tension of 
-        water on the paper. 
+        I tried to paint one watercolor picture a week last year, but fell a little short. These are my 2024 attempts. Hoping to add more in 
+        2025, as I really started cranking stuff out towards Christmas for gifts. I'm not really a "Generic Card Guy" so I've been making my
+        art into cards for friends and family. I hope people enjoy them! 
     </p>
 
     <br/>
 
-    <p> 
-        To help learn, I picked up "Stunning Watercolor Skies" by Rachael Mae Moyles which has really simple and 
-        effective techniques for landscapes, something I've always enjoyed photographing on camping trips. Below
-        are some of my paintings, earliest to latest as the year progresses.
-    </p>
-
+    <h3 class="h3">
+        2024
+    </h3>
     <br/>
-
     <Accordion>
         <Art description="First landscape painting after reading a book on watercolor landscapes. 
             Pretty basic, uninspired hills, I painted the horizon too far down." title="First landscape painting">
@@ -140,6 +136,16 @@
             <iframe src="https://drive.google.com/file/d/1MXk3j8MXzty9oqMtHPAXKcmLwAHqdKep/preview" width="640" height="480" allow="autoplay"></iframe>
             <iframe src="https://drive.google.com/file/d/1ZVkcK3eIfq8BmgwekpNJ373Fi9XtMj2E/preview" width="640" height="480" allow="autoplay"></iframe>    
         </Art>
+    </Accordion>
+
+    <br/>
+
+    <h3 class="h3">
+        2025
+    </h3>
+    <br/>
+    Coming soon!
+    <Accordion>
     </Accordion>
 </div>
 
