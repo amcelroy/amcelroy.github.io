@@ -155,9 +155,9 @@
                 <MathJax math="{wavenumber}"></MathJax>
             </body>
             <p>
-                When the data is acquired in linear time, it needs to be re-interpolated based. The coeffecients of the re-interpolation are typically generated from a mirror at some depth which causes
-                a frequency modulated sinusoid; the zero crossings of the sinusoid are the interpolation coefficients. These coeffecients would need to be acquired at the start of an experiement and usually
-                were tied to the medium being imaged, which wasn't a mirror. 
+                When the data is acquired in linear time, it needs to be re-interpolated. The indecies of the re-interpolation are typically generated from a mirror at some depth which causes
+                a frequency modulated sinusoid; the zero crossings of the sinusoid are the interpolation indecies. These indecies would need to be acquired at the start of an experiement and usually
+                were tied to the medium being imaged, which wasn't a mirror, and could drift over time.
             </p>
 
             <p>
