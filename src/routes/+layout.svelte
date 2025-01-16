@@ -20,6 +20,12 @@
 				</svelte:fragment>
 				<span>Home</span>
 			</AppRailAnchor>
+			<AppRailAnchor href="/dotstar" selected={$page.url.pathname === '/dotstar'}>
+				<svelte:fragment slot="lead">
+					<Icon icon="material-symbols:stars-rounded" style="font-size: 24px;"/>
+				</svelte:fragment>
+				<span>dotstar-rs</span>
+			</AppRailAnchor>
 			<AppRailAnchor href="/projects" selected={$page.url.pathname === '/projects'}>
 				<svelte:fragment slot="lead">
 					<Icon icon="octicon:project-symlink-16" style="font-size: 24px;"/>
