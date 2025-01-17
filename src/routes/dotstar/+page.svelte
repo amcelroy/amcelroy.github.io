@@ -80,9 +80,9 @@
         <div class="m-auto">
             <!-- Set the parameters for the different waveforms -->
             <button class="button" on:click={() => wasm.reset()}>Stop</button>
-            <Waveformparams bind:waveform={waveform0} bind:dt={waveform_0_dt}/>
-            <Waveformparams bind:waveform={waveform1} bind:dt={waveform_1_dt}/>
-            <Waveformparams bind:waveform={waveform2} bind:dt={waveform_2_dt}/>
+            <Waveformparams bind:waveform={waveform0} bind:dt={waveform_0_dt} name="Red" LEDs={32}/>
+            <Waveformparams bind:waveform={waveform1} bind:dt={waveform_1_dt} name="Green" LEDs={32}/>
+            <Waveformparams bind:waveform={waveform2} bind:dt={waveform_2_dt} name="Blue" LEDs={32}/>
         </div>
     </div>
     <div class="shadow border m-8 rounded-lg variant-glass-surface p-2">
