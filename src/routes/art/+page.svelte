@@ -68,13 +68,13 @@
             and I need to develop outside the nature scene book as well. Time for another book?">
             <iframe src="https://drive.google.com/file/d/1xymQInrFj-GeY7WyTdJVUqLev4eN97SN/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>    
-        <Art title="Flowers" description="Ha, still putting off the next landscape. Sara's mom got here these flowers
+        <Art title="Flowers" description="Ha, still putting off the next landscape. Sara's mom got her these flowers
             for Sara's birthday. I kind of ran out of time this week because I am working on a new hobby project but
             still carved out an hour to paint.">
             <iframe src="https://drive.google.com/file/d/1Kp8aKjGfsSt_BeVv9cDr4VIA8_FDOnpL/preview" width="640" height="480" allow="autoplay"></iframe>
             <iframe src="https://drive.google.com/file/d/181R6LJRKyYhuLcsKzyOqLoXY_5oaF-KU/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>        
-        <Art title="Bluebonnets" description="My son brought home some Bluebonnets that his MeeMa had been growing in her yard. He was so 
+        <Art title="Bluebonnets" description="My son brought home some Bluebonnets that his MeeMa had been growing in her yard. He also  
             said that some of the flowers had red centers which meant they had been visited by bees. He was so proud of his flowers and sharing
             that information, it was a great moment. I painted the flowers this week as a reminder of that moment.">
             <iframe src="https://drive.google.com/file/d/1o_GTdp76Pj1wxeIv3VNvHw3J7bjHN6kC/preview" width="640" height="480" allow="autoplay"></iframe>
@@ -102,7 +102,8 @@
             <p>
                 Mariah's though, it turned out great! It is a picture of the eclipse, which she spent a lot of time organizing
                 and planning for. It was an amazing, amazing family event that I'm really proud of her for pulling together
-                and sharing with everyone.
+                and sharing with everyone. I used salt to alter the surface tension of the water which gave some of the edges
+                an almost fractal feel.
             </p>
             <iframe src="https://drive.google.com/file/d/1rlKUEY1AAyMe16cMOyx_DRn5Use86ys3/preview" width="640" height="480" allow="autoplay"></iframe>
             <iframe src="https://drive.google.com/file/d/1HkMlQB9o9yczXTRm7sra6HNvj8YDA5gb/preview" width="640" height="480" allow="autoplay"></iframe>
@@ -123,7 +124,7 @@
             <p>
                 The Eiffel Tower I painted for my sister, she had just taken a trip to the Netherlands and Paris with a friend
                 and I've been to Paris twice and enjoyed the Eiffel tower both times. It is also iconic and not a spwarling palace
-                so it works with a vertical canvas.
+                so it works with a vertical canvas.  
             </p>
             <iframe src="https://drive.google.com/file/d/1vxwe3DUCGzl7qwE5GRCcEGlxuPv4Ez8A/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
@@ -158,8 +159,12 @@
         2025
     </h3>
     <br/>
-    Coming soon!
     <Accordion>
+        <Art title="Shell" description="I tried a spirograph + watercolor and was pretty happy with the results. The ink smeared, making the
+        colors much darker than intended. The outer ring was sto be a gold metallic color, the inner a light brown metalic. The original shade
+        can be seen near the top of each ring.">
+        <iframe src="https://drive.google.com/file/d/1FJJfHICR-s_NaRjCzmLhKtcIVHMWsgvO/preview" width="640" height="480" allow="autoplay"></iframe>  
+    </Art>
     </Accordion>
 </div>
 
