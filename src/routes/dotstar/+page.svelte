@@ -32,7 +32,7 @@
         if(browser){
             let led_id = document.getElementById('LEDS');
             if(led_id) {
-                led_div_width.set(led_id.offsetWidth);
+                led_div_width.set(led_id.offsetWidth - 16);
             }
         }
     }
@@ -112,14 +112,14 @@
 <svelte:window on:resize={dispatchResize} on:load={dispatchResize}/>
 
 {#if $argb}
-    <div class="flex shadow border m-8 rounded-lg variant-glass-surface">
-        <div class="flex flex-row p-1 m-auto" id="LEDS">
+    <div class="shadow border m-8 rounded-lg variant-glass-surface"  id="LEDS">
+        <div class="flex flex-row p-1 justify-between">
             {#each [...$argb] as v}
                 <Led v={v}/>
             {/each}
         </div>
     </div>
-    <div class="flex shadow border m-8 rounded-lg variant-glass-surface p-4">
+    <div class="flex shadow border m-8 rounded-lg p-1 variant-glass-surface">
         <canvas id="waveform" class="m-auto" width="{$led_div_width}" height="260"></canvas>
     </div>
     <div class="flex shadow border m-8 rounded-lg variant-glass-surface">
