@@ -59,14 +59,6 @@ export function argb_array() {
 }
 
 /**
- * @param {number} waveform
- * @param {number} dt
- */
-export function set_dt(waveform, dt) {
-    wasm.set_dt(waveform, dt);
-}
-
-/**
  * Update a waveforms
  * @param {number} waveform
  * @param {WaveformParams} params

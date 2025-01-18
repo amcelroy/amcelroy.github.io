@@ -23,7 +23,6 @@ export const waveformparams_get_phase: (a: number) => number;
 export const waveformparams_get_offset: (a: number) => number;
 export const init: () => void;
 export const argb_array: () => any;
-export const set_dt: (a: any, b: any) => void;
 export const update_waveform: (a: any, b: number) => void;
 export const tick: () => void;
 export const reset: () => void;

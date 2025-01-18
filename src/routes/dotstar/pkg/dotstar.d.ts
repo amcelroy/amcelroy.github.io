@@ -8,7 +8,6 @@ export function init(): void;
  * Returns a u32 array that represents ARGB values for the pixels on the Dotstar strip.
  */
 export function argb_array(): Uint32Array;
-export function set_dt(waveform: number, dt: number): void;
 /**
  * Update a waveforms
  */
