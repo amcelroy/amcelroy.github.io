@@ -161,10 +161,25 @@
     <br/>
     <Accordion>
         <Art title="Shell" description="I tried a spirograph + watercolor and was pretty happy with the results. The ink smeared, making the
-        colors much darker than intended. The outer ring was sto be a gold metallic color, the inner a light brown metalic. The original shade
-        can be seen near the top of each ring.">
-        <iframe src="https://drive.google.com/file/d/1FJJfHICR-s_NaRjCzmLhKtcIVHMWsgvO/preview" width="640" height="480" allow="autoplay"></iframe>  
-    </Art>
+            colors much darker than intended. The outer ring was sto be a gold metallic color, the inner a light brown metalic. The original shade
+            can be seen near the top of each ring.">
+            <iframe src="https://drive.google.com/file/d/1FJJfHICR-s_NaRjCzmLhKtcIVHMWsgvO/preview" width="640" height="480" allow="autoplay"></iframe>  
+        </Art>
+        <Art title="Spirograph in Frame" description="">
+            <p> 
+                On of my hobby projects is to make a picture frame with dynamic lighting, you read about it <a href="/dotstar" style="color: green;">here.</a>
+                It has been a fun project to get back into PCB design and get better at BLE. This is a spirograph I made using some of the metallic gel ink pens 
+                that Sara got me for my birthday. 
+            </p>
+            <iframe src="https://drive.google.com/file/d/19Jqls3yEFBtnfwcBnhh-k6cSuAIhv6qF/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1fYbWksuC2PusGEOPOIbLrWxCm7-6_Gm7/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>  
+        <Art title="Aurora at night" description="Sara got us another date night painting kit. We watch an instructional video on a scene and try to implement
+            it as best we can. Our previous one was a combo piece where she painted half and I painted half and the combined canvases make a coherent
+            piece. It was a lot of fun.  Sara's is on the right, she did an amazing job! A+! Acrylics are a lot different
+            than water paints, and I probably needed to add more water to the paints to get the edges to blend better. C+.">
+            <iframe src="https://drive.google.com/file/d/1JAey7kAqch_ZvuqDEoCGn2EgsHrRxsSE/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
     </Accordion>
 </div>
 
