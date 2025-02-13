@@ -36,12 +36,6 @@ function getStringFromWasm0(ptr, len) {
     ptr = ptr >>> 0;
     return cachedTextDecoder.decode(getUint8ArrayMemory0().subarray(ptr, ptr + len));
 }
-
-function _assertClass(instance, klass) {
-    if (!(instance instanceof klass)) {
-        throw new Error(`expected instance of ${klass.name}`);
-    }
-}
 /**
  * Initializes the chart with default waveforms and configures the mutex.
  */
@@ -58,6 +52,11 @@ export function argb_array() {
     return ret;
 }
 
+function _assertClass(instance, klass) {
+    if (!(instance instanceof klass)) {
+        throw new Error(`expected instance of ${klass.name}`);
+    }
+}
 /**
  * Update a waveforms
  * @param {number} waveform
@@ -176,14 +175,28 @@ export class WaveformParams {
         wasm.__wbg_set_waveformparams_offset(this.__wbg_ptr, arg0);
     }
     /**
+     * @returns {number}
+     */
+    get dt() {
+        const ret = wasm.__wbg_get_waveformparams_dt(this.__wbg_ptr);
+        return ret;
+    }
+    /**
+     * @param {number} arg0
+     */
+    set dt(arg0) {
+        wasm.__wbg_set_waveformparams_dt(this.__wbg_ptr, arg0);
+    }
+    /**
+     * @param {number} dt
      * @param {number} amplitude
      * @param {number} freq
      * @param {number} phase
      * @param {number} offset
      * @returns {WaveformParams}
      */
-    static new(amplitude, freq, phase, offset) {
-        const ret = wasm.waveformparams_new(amplitude, freq, phase, offset);
+    static new(dt, amplitude, freq, phase, offset) {
+        const ret = wasm.waveformparams_new(dt, amplitude, freq, phase, offset);
         return WaveformParams.__wrap(ret);
     }
     /**
@@ -192,6 +205,12 @@ export class WaveformParams {
     get() {
         const ret = wasm.waveformparams_get(this.__wbg_ptr);
         return WaveformParams.__wrap(ret);
+    }
+    /**
+     * @param {number} dt
+     */
+    set_dt(dt) {
+        wasm.waveformparams_set_dt(this.__wbg_ptr, dt);
     }
     /**
      * @param {number} amplitude
@@ -251,6 +270,13 @@ export class WaveformParams {
      */
     get_offset() {
         const ret = wasm.waveformparams_get_offset(this.__wbg_ptr);
+        return ret;
+    }
+    /**
+     * @returns {number}
+     */
+    get_dt() {
+        const ret = wasm.waveformparams_get_dt(this.__wbg_ptr);
         return ret;
     }
 }

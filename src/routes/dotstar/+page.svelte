@@ -13,16 +13,15 @@
     const LEDS: number = 32;
     const DOT_SIZE: number = 3;
     const DOT_OFFSET: number = DOT_SIZE/2;
+    const DT = 1 / 32;
 
-    let waveform0 = wasm.WaveformParams.new(1, .5, 0, 0);
-    let waveform1 = wasm.WaveformParams.new(1, .5, 3.14/2, 0);
-    let waveform2 = wasm.WaveformParams.new(1, .5, 3.14, 0);
-
+    let waveform0 = wasm.WaveformParams.new(DT, 1, .5, 0, 0);
+    let waveform1 = wasm.WaveformParams.new(DT, 1, .5, 3.14/2, 0);
+    let waveform2 = wasm.WaveformParams.new(DT, 1, .5, 3.14, 0);
 
     const schematicUrl = new URL('./schematic.png', import.meta.url).href;
     const pcb2dUrl = new URL('./pcb_2d.png', import.meta.url).href;
     const pcb3dUrl = new URL('./pcb_3d.png', import.meta.url).href;
-
 
     let timer: NodeJS.Timeout | null = null;
 
