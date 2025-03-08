@@ -161,10 +161,67 @@
     <br/>
     <Accordion>
         <Art title="Shell" description="I tried a spirograph + watercolor and was pretty happy with the results. The ink smeared, making the
-        colors much darker than intended. The outer ring was sto be a gold metallic color, the inner a light brown metalic. The original shade
-        can be seen near the top of each ring.">
-        <iframe src="https://drive.google.com/file/d/1FJJfHICR-s_NaRjCzmLhKtcIVHMWsgvO/preview" width="640" height="480" allow="autoplay"></iframe>  
-    </Art>
+            colors much darker than intended. The outer ring was sto be a gold metallic color, the inner a light brown metalic. The original shade
+            can be seen near the top of each ring.">
+            <iframe src="https://drive.google.com/file/d/1FJJfHICR-s_NaRjCzmLhKtcIVHMWsgvO/preview" width="640" height="480" allow="autoplay"></iframe>  
+        </Art>
+        <Art title="Spirograph in Frame" description="">
+            <p> 
+                On of my hobby projects is to make a picture frame with dynamic lighting, you read about it <a href="/dotstar" style="color: green;">here.</a>
+                It has been a fun project to get back into PCB design and get better at BLE. This is a spirograph I made using some of the metallic gel ink pens 
+                that Sara got me for my birthday. 
+            </p>
+            <iframe src="https://drive.google.com/file/d/19Jqls3yEFBtnfwcBnhh-k6cSuAIhv6qF/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1fYbWksuC2PusGEOPOIbLrWxCm7-6_Gm7/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>  
+        <Art title="Aurora at night" description="Sara got us another date night painting kit. We watch an instructional video on a scene and try to implement
+            it as best we can. Our previous one was a combo piece where she painted half and I painted half and the combined canvases make a coherent
+            piece. It was a lot of fun.  Sara's is on the right, she did an amazing job! A+! Acrylics are a lot different
+            than water paints, and I probably needed to add more water to the paints to get the edges to blend better. C+.">
+            <iframe src="https://drive.google.com/file/d/1JAey7kAqch_ZvuqDEoCGn2EgsHrRxsSE/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
+        <Art title="Valentine's Art" description="">
+            <p>
+                Sara and I were talking about high school Valentine's when people would give each
+                other carnations. It was great if you were popular, but the excitement of seeing the person delivering the carnation and
+                not getting one, well, that was less exciting. She said she did get a carnation in high school, so I painted her one so 
+                she could get her first carnation for Valentine's day.
+            </p>
+            <p>
+                I also got the spirograph out and tried to do a fun piece for my art frame, see next entry. Something that 
+                would look different in different colors of light.
+            </p>
+            <iframe src="https://drive.google.com/file/d/1ckEryDE2X7ysFhH4z9lSawrly7xGdnkV/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
+        <Art title="Picture Frame">
+            <p>
+                I've been working on a picture frame that has an LED strip and BLE microcontroller. It is my first
+                PCB design using an MCU and I'm pretty happy with how things have turned out. I designed the frame 
+                to be 3D printed, the PCB to power the LEDs including a level shifter and reservoir capacitor, written
+                the firmware in Rust to handle the BLE communication, written a WASM / no_std library for the `dotstar` 
+                LEDs, and written a React Native app with BLE to control the LEDs wirelessly. Phew. 
+            </p>
+            <p>
+                Behold, the frame in all its glory. The phone does not capture the dynamic range of the human eye
+                and it looks a lot better in person. 
+            </p>
+            <iframe src="https://drive.google.com/file/d/1DdUs9FUCLHfZlKVLybgW7zdN7Nw3g97y/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1IOIi8xmW_ld0YvbnLQL2Sq6aMz7KLuur/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
+        <Art title="Sheri's Birthday">
+            <p>
+                I got a new spirograph that has finer teeth and nice features. Time to put it to use for a birthday gift.
+                Aunt Sheri does a lot of nice cooking and keeps a level head when things get crazy. She takes care of 
+                her mom and Trig, and probably doesn't get enough credit. I wanted to make her something and went with 
+                a spirograph with an earth, sun, sky feel. The frame is the one I've designed for the LEDs but don't
+                have an LED strip of circuits right now, so it is just a frame.
+            </p>
+            <p>
+                I really like the color gradients and the masking. 
+            </p>
+            <iframe src="https://drive.google.com/file/d/1DdUs9FUCLHfZlKVLybgW7zdN7Nw3g97y/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1Q7zCDXC3GaWwNvLMItN9iAGwRBE1ILiH/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
     </Accordion>
 </div>
 

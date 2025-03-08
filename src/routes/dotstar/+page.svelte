@@ -13,16 +13,15 @@
     const LEDS: number = 32;
     const DOT_SIZE: number = 3;
     const DOT_OFFSET: number = DOT_SIZE/2;
+    const DT = 1 / 32;
 
-    let waveform0 = wasm.WaveformParams.new(1, .5, 0, 0);
-    let waveform1 = wasm.WaveformParams.new(1, .5, 3.14/2, 0);
-    let waveform2 = wasm.WaveformParams.new(1, .5, 3.14, 0);
-
+    let waveform0 = wasm.WaveformParams.new(DT, 1, .5, 0, 0);
+    let waveform1 = wasm.WaveformParams.new(DT, 1, .5, 3.14/2, 0);
+    let waveform2 = wasm.WaveformParams.new(DT, 1, .5, 3.14, 0);
 
     const schematicUrl = new URL('./schematic.png', import.meta.url).href;
     const pcb2dUrl = new URL('./pcb_2d.png', import.meta.url).href;
     const pcb3dUrl = new URL('./pcb_3d.png', import.meta.url).href;
-
 
     let timer: NodeJS.Timeout | null = null;
 
@@ -155,7 +154,7 @@
         <p class="m-3">
             The nRF52840 is using Rust (of course) Embassy firmware and BLE stack that controls the waveforms that are displayed on the Dotstar LEDs. I decided to
             have each LED controlled by a waveform that can be dynamically updated - the amplitude, frequency, phase, 
-            and offset. The waveforms should generally reside between -1 to 1, which maps from 0 -%gt 255 in 
+            and offset. The waveforms should generally reside between -1 to 1, which maps from 0 to 255 in 
             the 8-bit space. The superposition of the waveforms maps to color. We have smooth dynamic, programmable, lighting. Let there be light!
         </p>
         <p class="m-3">
@@ -165,7 +164,7 @@
             This means libraries written in no_std Rust can be exported relatively 
             easily to WASM. The waveforms above are generated in a Rust library that I have been working on to control the Adafruit Dotstar LED strips. They have an addressable
             LED protocol that has a start frame, a series of digital data for each LED, and an end frame. Each white light or RGB LED takes 32 bits of data
-            to program. the 3 upper bytes are 1, followed by 5 bits for a global alpha, followed by 8 bits for blue, green, and red (or white, white, white
+            to program: the 3 upper bits are 1, followed by 5 bits for a global alpha, followed by 8 bits for blue, green, and red (or white, white, white
             for the mono-color). The update rate is really high using the SPI bus with a core clock speed of 8 MHz means we can spit out data at
             8MHz / ((Number of LEDs + 2)*32) means we have a refresh rate of &gt 7Khz for 32 LEDs. The eye is comfortable at 20 to 30 Hz, so we will use a timer
             at 50ms (20 Hz) govern the update rate of the LEDs.

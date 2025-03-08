@@ -3,6 +3,7 @@
     import { Accordion } from "@skeletonlabs/skeleton";
     import PatentProject from "./PatentProject.svelte";
     import MathJax from "./MathJax.svelte";
+    import Project from "./Project.svelte";
 
     let wavenumber = `$$k = \\frac{2 \\pi}{\\lambda}$$`;
 
@@ -191,8 +192,23 @@
                 to write several algorithms at UT in OpenCL: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3055590/">Speckle Processing</a>, 
                 <a href="https://pubmed.ncbi.nlm.nih.gov/35589781/">Blood Flow Detection</a>, and Polarization linear fit algorithm on a stack of 7 images. 
             </p>
-
         </PatentProject>
+        <Project header="ABBU - Automated Bridge Breathing Unit">
+            <p>
+                I finished up a M.S.E.E at UT during the COVID pandemic. My masters thesis was part of a team; I designed the circuit 
+                board and firmware for a low-cost bridge 
+                ventilator unit. The team was lead by Dr. Thomas Milner and Dr. Johnathan Valvano and couldn't have been completed without
+                the help of a lot of other people. 
+            </p>
+            <p>
+                Though we moved fast, the vaccine came out as we were submitting the device to the FDA under the emergancy authorization
+                act and it was deemed not needed. Regardless, it was an amazing experience that made us feel empowered during a time of a 
+                lot of uncertainty.
+            </p>
+            <p style="color: lightgreen;">
+                <a href="https://news.utexas.edu/2020/04/01/solving-the-ventilator-shortage-with-windshield-wiper-parts/">ABBU Press Release</a>
+            </p>
+        </Project>
     </Accordion>
 </div>
 

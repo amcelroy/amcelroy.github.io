@@ -31,8 +31,9 @@ export enum WaveformType {
 export class WaveformParams {
   private constructor();
   free(): void;
-  static new(amplitude: number, freq: number, phase: number, offset: number): WaveformParams;
+  static new(dt: number, amplitude: number, freq: number, phase: number, offset: number): WaveformParams;
   get(): WaveformParams;
+  set_dt(dt: number): void;
   set_amplitude(amplitude: number): void;
   set_freq(freq: number): void;
   set_phase(phase: number): void;
@@ -42,8 +43,10 @@ export class WaveformParams {
   get_freq(): number;
   get_phase(): number;
   get_offset(): number;
+  get_dt(): number;
   amplitude: number;
   freq: number;
   phase: number;
   offset: number;
+  dt: number;
 }
