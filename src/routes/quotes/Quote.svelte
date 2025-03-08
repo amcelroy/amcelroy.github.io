@@ -11,7 +11,7 @@
             <div class="quotation pl-1">"</div>
         </div>
         <div class="flex justify-end mt-4 mr-16">
-            <h4 class="pr-1">-</h4><h6>{citation}</h6>
+            <h4 class="pr-1">-</h4><h6 class="citation">{citation}</h6>
         </div>
     </div>
 </div>
@@ -27,10 +27,16 @@
         font-size: 1.5em;
         font-weight: bold;
         font-style: italic;
+        font-style: italic;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .citation {
+        font-size: 1em;
+        font-family:'Courier New', Courier, monospace;
     }
     .quotation{
         font-size: 2.5em;
         font-weight: bold;
-        font-style: italic;
+
     }
 </style>
