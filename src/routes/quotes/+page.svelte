@@ -62,7 +62,7 @@
         quote("All philosophies are either monist or dualist. Monists believe that the material world is the only world—hence, materialists." +
             " Dualists believe in a binary universe, that there is a spiritual world in addition to the material world.”", NEAL_STEPHENSON),
         quote("We have a huge workforce that is illiterate or alliterate and relies on TV—which is sort of an oral tradition. And we have a small, extremely literate power elite—the people" + 
-            " who go into the Metaverse, basically—who understand that information is power, and who control society because they have this semimystical ability to speak magic computer languages.", GENE_KIM),
+            " who go into the Metaverse, basically—who understand that information is power, and who control society because they have this semimystical ability to speak magic computer languages.", NEAL_STEPHENSON),
         quote("We need to establish an accurate timeline of relevant events. And so far, we’re basing everything on hearsay." + 
             " That doesn’t work for solving crimes, and it definitely doesn’t work for solving outages.", GENE_KIM),
         quote("Unplanned work kills your ability to do planned work, so you must always do whatever it takes to eradicate it.", GENE_KIM),
