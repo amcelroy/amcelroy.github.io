@@ -16,6 +16,7 @@
     const JOHN_SCALZI = "John Scalzi";
     const SUSANNA_CLARKE = "Susanna Clarke";
     const ROBERT_JACKSON_BENNETT = "Robert Jackson Bennett";
+    const N_K_JEMISIN = "N.K. Jemisin";
 
     interface IQuote {
         quote: string;
@@ -34,8 +35,8 @@
         quote("The only way to learn a new programming language is by writing programs in it.", "Dennis Ritchie"),
         quote("Sometimes, a person reaches a point in their life when it becomes absolutely essential to get the fuck out of the city.", BECKY_CHAMBERS),
         quote("Dex realized with a stomach-souring thud that they were standing on the wrong side of the vast gulf between having read about doing a thing and doing the thing.", BECKY_CHAMBERS),
-        quote("“So, the paradox is that the ecosystem as a whole needs its participants to act with restraint in order to avoid collapse" + 
-            "but the participants themselves have no inbuilt mechanism to encourage such behavior.”", BECKY_CHAMBERS),
+        quote("So, the paradox is that the ecosystem as a whole needs its participants to act with restraint in order to avoid collapse" + 
+            "but the participants themselves have no inbuilt mechanism to encourage such behavior.", BECKY_CHAMBERS),
         quote("Without money, the secrets of the universe are worth shit.", CIXIN_LIU),
         quote("By the time you’re my age, you’ll realize that everything you once thought mattered so much turns out to mean very little.", CIXIN_LIU),
         quote("These are the rules of the game of civilization: The first priority is to guarantee the existence of the human race and their comfortable life. Everything else is secondary.",
@@ -79,10 +80,12 @@
         quote("It’s one of those truths too true to ever be said out loud.", MICHAIAH_JOHNSON),
         quote("The size of the brain is no measure of its capacity.", ROBERT_O_BRIEN),
         quote("All doors are hard to unlock until you have the key.", ROBERT_O_BRIEN),
+        quote("It was as simple as that—when you could read.", ROBERT_O_BRIEN),
+        quote("We did not have enough work to do because a thief’s life is always based on somebody else’s work.", ROBERT_O_BRIEN),
+        quote("When you’ve lived in a cage, you can’t bear not to run, even if what you’re running toward is an illusion.", ROBERT_O_BRIEN),
         quote("Envy of those whom one despises is a degrading passion and may well poison a whole life.", FRANCOIS_MAURIAC),
         quote("Besides, you had that particular arrogance that takes the form of never looking at other people and is tantamount to denying their existence.", FRANCOIS_MAURIAC),
         quote("After all, there is no shadow without a reality that projects it.", FRANCOIS_MAURIAC),
-        quote("We did not have enough work to do because a thief’s life is always based on somebody else’s work.", FRANCOIS_MAURIAC),
         quote("I received the gift of it merely because I happened to be there.", FRANCOIS_MAURIAC),
         quote("But the horror of growing old consists in this, that one’s age is the sum total of one’s life, and not one figure of it can we change.", FRANCOIS_MAURIAC),
         quote("Besides, history viewed from the inside is always a dark, digestive mess, far different from the easily recognizable cow viewed from afar by historians.", DAN_SIMMONS),
@@ -101,7 +104,13 @@
         quote("What a tool cynicism is to the corrupt, claiming the whole of the creation is broken and fraudulent, and thus we are all excused" + 
             " to indulge in whatever sins we wish—for what’s a little more unfairness, in this unfair world?", ROBERT_JACKSON_BENNETT),
         quote("The whole is greater than the sum of its parts", "Aristotle"),
-
+        quote("It’s easy to give up authority in crisis. Easy to do what you’re told. Easy to follow orders and let somebody else take responsibility." + 
+            " Easy to pretend you didn’t know what was going on.", "Metatropolis"),
+        quote("“Who lives anywhere, anymore? We’re digital nomads.” When he patted the omni on his belt, his tags jingled." + 
+            " “Where my data is, that’s my home. Stuff is just stuff. Almost anything can be replaced, or rented.”", "Metatropolis"),
+        quote("It sounded ridiculous, but sometimes it took losing something important to you for you to shake yourself" + 
+            " out of your old habits and seek out something new. Something different. Sometimes, something better.", "Metatropolis"),
+        quote("But for a society built on exploitation, there is no greater threat than having no one left to oppress.", N_K_JEMISIN),
 
 
     ];
@@ -115,9 +124,7 @@
         }
         return a;
     }
-
 </script>
-
 
 <div>
     {#each shuffled as q}
