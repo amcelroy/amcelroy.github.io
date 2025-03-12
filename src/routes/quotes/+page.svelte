@@ -17,6 +17,9 @@
     const SUSANNA_CLARKE = "Susanna Clarke";
     const ROBERT_JACKSON_BENNETT = "Robert Jackson Bennett";
     const N_K_JEMISIN = "N.K. Jemisin";
+    const K_J_PARKER = "K.J. Parker";
+    const JOE_ABECROMBIE = "Joe Abercrombie";
+    const PETER_F_HAMILTON = "Peter F. Hamilton";
 
     interface IQuote {
         quote: string;
@@ -111,8 +114,38 @@
         quote("It sounded ridiculous, but sometimes it took losing something important to you for you to shake yourself" + 
             " out of your old habits and seek out something new. Something different. Sometimes, something better.", "Metatropolis"),
         quote("But for a society built on exploitation, there is no greater threat than having no one left to oppress.", N_K_JEMISIN),
-
-
+        quote("In his hands now, it was as ugly and messy as a new-born baby; a man-made limb, put together out of bone, tendon, blood and skin," + 
+            " with all the body parts refined, corrected, pulled out and put back together again in a better, more efficient way. On the back, " + 
+            "the tendons to be stretched, in the belly the bone to be crushed and compressed, the two held apart by an intrusive wafer of timber," 
+            + " held together by blood, skin and bone-dust; an arm stronger than any man’s arm when stretched and crushed to the very point of destruction," + 
+            " made by violence for violence out of body parts, heat, desiccation and skill.", K_J_PARKER),
+        quote("‘Not evil,’ he said. ‘Unlucky. There’s no such thing as evil, it’s a myth, a sloppy, wasteful way of thinking. There’s just bad luck that" + 
+            " makes us do things, even though we’re trying to do what’s best. You can’t fight bad luck, you’ve just got to accept it", K_J_PARKER),
+        quote("Secretly, deep down, everybody on Earth believes they can write poetry, apart from the members of the Poets' Guild, who know they can't.", K_J_PARKER),
+        quote("The world is full of annoyances, none more infuriating than a fool with a valid point.", K_J_PARKER),
+        quote("All true engineers are enthusiasts; they value admiration and respect every bit as much as painters and sculptors do, and they know they deserve it even more." + 
+            " All a sculpture need do is look a certain way. A machine has to work.", K_J_PARKER),
+        quote("By being loved, you’re under an obligation. You’ve undertaken to still be there, tomorrow and the next day.", K_J_PARKER),
+        quote("Defeat is a gradual thing; it begins with the apprehension that things could be going better, develops into the perception that the situation is not favourable" +  
+            " and that action must be taken to redress the balance; then, gradually, the emphasis shifts from they would appear to have an advantage to we might still win this" + 
+            " if we pull something special out of the hat. Then, one by one, the possibilities for salvation are cancelled, until a point is reached where the brain acknowledges" + 
+            " that realistically there can only be one outcome.", K_J_PARKER),
+        quote("Conquerors live in dread of the day when they are shown to be, not superior, but simply lucky.", N_K_JEMISIN),
+        quote("“The goal of government, you see,” and the Arch Lector prodded at the air with his bony forefinger," + 
+            " “is to load the unhappiness onto those least able to make you suffer for it.”", JOE_ABECROMBIE),
+        quote("Truly, as he loved to say, life is the misery we endure between disappointments.", JOE_ABECROMBIE),
+        quote("A few glasses of wine can be the difference between finding a man a hilarious companion or an insufferable moron.", JOE_ABECROMBIE),
+        quote("Sometimes, when old friends meet, things are instantly as they were all those years before. The friendship resumes," + 
+            " untouched, as though there had been no interruption.", JOE_ABECROMBIE),
+        quote("Take it far enough, freedom becomes chaos. The voice of the people… is just noise. It is the blather of the lunatics in the madhouse." + 
+            " It is the squeal of the pigs in the slaughterhouse. It is a choir of morons. Most of them don’t even know what they want," + 
+            " let alone how to get it. They need someone to tell them what to do.", JOE_ABECROMBIE),
+        quote("History is not the story of battles between right and wrong, but between one man’s right and another’s." + 
+            " Evil is not the opposite of good. It is what we call another man’s notion of good when it differs from ours.", JOE_ABECROMBIE),
+        quote("Don’t matter how mad, strange or outrageous, folk’ll get bored of anything.", JOE_ABECROMBIE),
+        quote("Continuity of consciousness rather than unbroken memory, that is the human soul.", PETER_F_HAMILTON),
+        quote("Once you have built something—something that takes all your passion and will—it becomes more precious to you than your own happiness.", "Sofia Samatar"),
+        quote("n this book there are poems by people who lived a thousand years ago! Memory can’t do that—it can save a few poems for a few generations, but not forever. Not like this.", "Sofia Samatar"),
     ];
 
     $: shuffled = shuffle(quotes);
