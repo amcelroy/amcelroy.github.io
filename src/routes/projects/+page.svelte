@@ -28,7 +28,13 @@
             The first "app" in RaptorOS will be simple bit manipulation tools that I use when writing firmware. Currently, it can spawn 
             "Applications" which are windows that can be moved around and closed. 
             </p>
-        </GithubProject>
+        </GithubProject >
+        <PatentProject header="US 12,213,810 - Systems and methods for automated coronary plaque characterization and risk assessment using intravascular optical coherence tomography">
+            <a href="https://patentimages.storage.googleapis.com/6f/52/86/df09f5f2dfa6da/US12213810.pdf" style="color: lightgreen;" target="_blank">Patent</a>
+        </PatentProject>
+        <PatentProject header="US 11,779,220 - Multi-channel orthogonal convolutional neural networks">
+            <a href="https://patentimages.storage.googleapis.com/29/8d/54/7ee6cca9c2919f/US11779220.pdf" style="color: lightgreen;" target="_blank">Patent</a>
+        </PatentProject>
         <GithubProject 
             header="FLEM Protocol - Flexible, Lightweight, Embedded Messaging Protocol" >
             <p>
