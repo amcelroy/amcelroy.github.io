@@ -222,6 +222,17 @@
             <iframe src="https://drive.google.com/file/d/1DdUs9FUCLHfZlKVLybgW7zdN7Nw3g97y/preview" width="640" height="480" allow="autoplay"></iframe>
             <iframe src="https://drive.google.com/file/d/1Q7zCDXC3GaWwNvLMItN9iAGwRBE1ILiH/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
+        <Art title="Enzo's Birthday">
+            <p>
+                Been a while since I painted, but it was a fun one. My nephew Enzo's birthday was this weekend and we got him this really cool ceiling
+                projector that projects a dynamic galaxy pattern in all sorts of different colors. It has green laser lights that speckle the galaxy
+                pattern. What better painting than of a galaxy! I tried out some new metalic paints that I got a few months ago. The picture doesn't do
+                the metalic paint justtice, it really does sparkle under the light. 
+
+                Liam and Sara helped place starts using a white ink pen. Turned out pretty well for a family effort.
+            </p>
+            <iframe src="https://drive.google.com/file/d/12kHn7tViimfDoABERCGP_FIW80d6sGqf/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
     </Accordion>
 </div>
 
