@@ -233,6 +233,20 @@
             </p>
             <iframe src="https://drive.google.com/file/d/12kHn7tViimfDoABERCGP_FIW80d6sGqf/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
+        <Art title="Mary Jane's Birthday">
+            <p>
+                Sara's mom has a birthdya coming up, and Sara made her mom a bookmark with these really pretty flowers 
+                that were really dainty with dark purple petals. The stems kind of merge together and there were some 
+                whispy leaves on the side. Seemed like a fun little project with 3 colors, perfect for some water coloring.
+            </p>
+            <p>
+                Liam was out front doing tricks on his scooter and the evening was gorgeous, 80 with a strong breeze, overcast
+                to mute the light, and little traffic to worry about on Good Friday. I sat out front with him and painted under
+                the grey sky as the evening turned almost a yellowish color as the sun set. 4/4 evening watching my son and
+                painting.
+            </p>
+            <iframe src="https://drive.google.com/file/d/1Pt3Y_0RqjqigsJOXzUEwkGAna9sUGacD/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
     </Accordion>
 </div>
 
