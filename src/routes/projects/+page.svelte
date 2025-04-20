@@ -4,9 +4,17 @@
     import PatentProject from "./PatentProject.svelte";
     import MathJax from "./MathJax.svelte";
     import Project from "./Project.svelte";
+    import ElectronicsProject from "./ElectronicsProject.svelte";
+    import PictureScroll from "$lib/PictureScroll.svelte";
+    import pinout from "$lib/ecu_v1/pinout.png";
+    import pcb from "$lib/ecu_v1/pcb.png";
+    import render_1 from "$lib/ecu_v1/render_1.png";
+    import render_2 from "$lib/ecu_v1/render_2.png";
+    import render_3 from "$lib/ecu_v1/render_3.png";
+    import physical_1 from "$lib/ecu_v1/physical_1.jpeg";
+    import physical_2 from "$lib/ecu_v1/physical_2.jpeg";
 
     let wavenumber = `$$k = \\frac{2 \\pi}{\\lambda}$$`;
-
 </script>
 
 <div class="card card-hover projects variant-glass-secondary">
@@ -31,6 +39,143 @@
                 "Applications" which are windows that can be moved around and closed. 
             </p>
         </GithubProject >
+        <ElectronicsProject header="Electronics Control Unit">
+            <p> 
+                A lot of project I work on for previous jobs are hard to share until a few years have passed, mostly due to privacy, IP, that sort of thing. At my current company
+                we have a demo robot called BBot that runs on a Raspberry Pi and uses a few Adafruit modules to gather data and keep BBot humming along. I decided to design a circuit
+                as a replacement for the Raspberry Pi using an STM32G474 and integrating several Adafruit sub-circuits on the PCB. 
+            </p>
+            <p>
+                The design requirements were gathered from a few different conversations and this wasn't an official work project, so I thought it would be nice to share my results with others. I'd like to think it also demonstrates 
+                that I pay attention when others are talking about their projects and needs and be attentive to those needs when I have some spare time. 
+                You may be asking yourself, why not ohm out BBot and reverse engineer the circuit? Great question, glad you asked. I'm in Texas and BBot resides in Oakland, CA and there is only 1 BBot, 
+                so that was would have been a big ask. 
+            </p>
+            <p>
+                This project was particularly challenging because we didn't have the schematics for the original circuit. So I didn't have an official requirements document nor the original
+                circuit the crib off of. The circuit was designed in KiCad to help me learn that tool, which has been really worth it. It is much more intuitive for me than Altium (phew, 
+                don't get me started) and I ended up using KiCad for my picture frame project as well.
+            </p>
+            <h1>Requirements:</h1>
+            <ul class="list-disc ml-8 mb-4">
+                <li class="mb-4">
+                    <h2>Doesn't use a Raspberry Pi</h2>
+                    <p class="ml-8">
+                        At my last company we moved from a TM4C123 to an STM32G474, so I chose the STM32G474 since I've got a lot of experience with it. STM documentation is pretty
+                        damn good as well: application notes, datasheets, and MCU manuals.
+                    </p>
+                </li>
+                <li>
+                    <h2>Powered by the primary battery</h2>
+                    <p class="ml-8">
+                        Due to previous design choices, the Raspberry Pi is powered by a secondary battery. This battery needs to be popped out and 
+                        charged and has been a source of consternation for those running BBot for demos. I designed and added my first buck converter circuit that can step 6 to 60V
+                        down to 5V, with an additinal 3.3V linear regulator to power most of the electronics. BBot is powere by a pretty beefy battery pack 
+                    </p>
+                </li>
+                <li>
+                    <h2>4 UART peripherals</h2>
+                    <p class="ml-8">
+                        BBot uses lots of UART: 1 for the IMU, 1 for each of the 2 motor drivers, and 1 was supposed to be for lidar.
+                    </p>
+                </li>
+                <li>
+                    <h2>1 I2C</h2>
+                    <p class="ml-8">
+                        BBot has a replacement unit, CBot, that was being worked on at the time. It used an INA260 to handle power and current sensing. Easy enough to add
+                        for BBot. I2C is an amazing bus protocol, so I decided to try and move the IMU over to I2C as well. See my "Lessons Learned" second for why this was
+                        a mistake.
+                    </p>
+                    <p class="ml-8">
+                        The INA260 requires big fat traces since ALL of the current needs to go through the IC pins, as there is a small resistor and ADC in there to measure
+                        current drop across the resistor and determine current draw. I was really pleased with the INA260 and buck circuit, both had very clear and concise 
+                        datasheets, something I really filter for when selecting an IC. 
+                    </p>
+                </li>
+                <li>
+                    <h2>1 CAN Peripheral</h2>
+                    <p class="ml-8">
+                        One of the engineers on the team is from an automotive background and asked for a CAN peripheral and transceiver. This was a "happy path" CAN transceiver
+                        without all of the high voltage isolation protection requirements; so, you know, don't hook it up to your car. I'm glad this was asked for, because it came 
+                        in really handy when I had to rewrite some of the CAN blocks and had a ready made CAN bus to test on. It also really helped me appriciate the CAN bus protocol 
+                        since I've only worked with it on one other project and didn't do any of the circuit design work. The CAN required an MCP2551 to handle CAN TTL to CAN differential.
+                    </p>
+
+                </li>
+                <li>
+                    <h2>1 IMU</h2>
+                    <p class="ml-8">
+                        BBot uses a BNO085 inertial measurement unit (IMU) which is supposed to be easy to work with. It has SPI, UART, and I2C interfaces. I thought I would cool and 
+                        use the I2C interface instead of UART, since the INA260 uses almost no I2C bus bandwidth. Lets just say that V2 of this board uses UART again for the IMU.
+                    </p>
+                </li>
+                <li>
+                    <h2>Easy to connectorize</h2>
+                    <p class="ml-8">
+                        Big complaint with the original BBot circuit is that it uses a lot of Du Pont wires that are easy to disconnect. Pretty stressful when a wire disconnects before a 
+                        demo. I added both an automotive grade connector (another request from the automotive engineer), several mini terminal blocks, and a 14 pin header. The terminal blocks
+                        are for power, CAN, and UART since I've been on the receiving end of trying to connect a few board together and only having 1 spare 5V or ground pin that needs to be shared.
+                        The 14 pin header got I2C, SPI, timers, 5V, Gnd, and some other misc GPIO. The automotive connector gets pretty much all the signals: ADC, DAC, Timers, I2C, SPI, GPIO, UART, 
+                        CAN
+                    </p>
+                </li>
+            </ul>
+            <p>
+                Mish-mash of requirements from a handful of conversations without an original circuit or design engineer to work with. How did it turn out? Pretty good! It cost $300 to get 2 boards manufactured and 
+                assembled (pre-tariff, not sure what V2 is going to cost...). The boards came at a great time when I was tasked to re-write a bunch of the hardware blocks, so I had an I2C, SPI, CAN,
+                UART, and PWM all in one unit to test on. I'd like to take credit for awesome planning, but sometimes things just work out. This was my first board that had an MCU where I had to lay out everything including 
+                the oscillator which I think is pretty cool! The picture frame PCB used an FCC approved BLE module that took care of VRef and oscillators.
+            </p>
+            <p>
+                For the most part, things worked out. The boost circuit works like a champ, the INA260 worked great, CAN worked well, the IMU (which needed its own oscillator)
+                was responsive, the terminal blocks were super easy to use. SPI, ADC, I2C, PWM, DAC, GPIO - check, check, check, check, and check. End of story, everything worked out of the box, happy ending and BBot lived
+                happily ever after! Well, it wouldn't be a learning project without learning, and usually failing is a good way to learn. 
+            </p>
+            <h1>Lessons Learned:</h1>
+            <ul class="list-disc ml-8 mb-4">
+                <li class="mb-4">
+                    <h2>Read the protocol application note for a complex IC like an IMU and don't use I2C for the BNO085</h2>
+                    <p class="ml-8">
+                        Holy shit I messed this up. The protocol for this IC was in an entirely different app note, and the datasheet indicated that the IMU was straighfoward to use over
+                        I2C: I2C address, read and write, easy peasy. Nope. The I2C bus is essentially used as a serial bus with packet headers and everything. There is an easy to use UART 
+                        mode that just spits out data on a UART line at 100Hz, I guess that is why the original engineer picked that. Oops. Fixed in V2.
+                    </p>
+                </li>
+                <li>
+                    <h2>Double check the datasheet footprint for the tinest parts</h2>
+                    <p class="ml-8">
+                        The LEDs I selected had the anode, the input pin, as pin 2 and the cathode, the output pin, as pin 1. LEDs don't work very well as a light source when put in backwards. The good news
+                        is that they work great as diodes and block the signal as well as normal diodes. Fixed in V2.
+                    </p>
+                </li>
+                <li>
+                    <h2>VRef on the SWD header is not VRef from the MCU</h2>
+                    <p class="ml-8">
+                        Another holy shit level mess up. The SWD header needs a VRef to measure the power to the MCU. The MCU has a VRef pin on it. Like peanut butter and chocolate, just 
+                        hook them up and good to go. Jimmy jammed by the naming. The STM32 VRef pin is pretty confusing on the G474. It can be a source of a few different voltages, or a 
+                        sink for the ADC VRef. It took me a few hours to figure out what I did wrong, but was easy enough to fix: Vref on the MCU was soldered over to the 3.3V line since
+                        the intention for the ADC is just full voltage quantization and nothing small signal or and 
+                        VRef on the MCU header had a jumper wire soldered to the 3.3V line. Fixed in V2.
+                    </p>
+                </li>
+                <li>
+                    <h2>Get a schematic review</h2>
+                    <p class="ml-8">
+                        I did this by myself mostly after work as a learning project and a contribution to the team since we are a small start-up. I think some of the issues above would
+                        have been caught if I had an invested second set of eyes but the best I could do was a post on Reddit asking for help. The community caught a lack of I2C pull ups 
+                        which I was able to add before getting the board fabbed, so it was helpful. 
+                    </p>
+                </li>
+                <li>
+                    <h2>Ask questions about the existing design</h2>
+                    <p class="ml-8">
+                        This one seems obvious but wasn't feasible on this project. The engineer that put together BBot had left the company and didn't leave behind any schematics or notes. 
+                        Nobody mentioned that I2C on the IMU was a massive pain in the ass, but to be fair, I didn't ask either. 
+                    </p>
+                </li>
+            </ul>
+            <PictureScroll urls={[pinout, pcb, render_1, render_2, render_3, physical_1, physical_2]} iframes={["https://drive.google.com/file/d/1ZrSwVYoVbVdV5vQ7mo_kpecS_CuPc1in/preview"]}/>
+        </ElectronicsProject>
         <PatentProject header="US 12,213,810 - Systems and methods for automated coronary plaque characterization and risk assessment using intravascular optical coherence tomography">
             <a href="https://patentimages.storage.googleapis.com/6f/52/86/df09f5f2dfa6da/US12213810.pdf" style="color: lightgreen;" target="_blank">Patent</a>
         </PatentProject>

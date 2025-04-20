@@ -44,7 +44,6 @@
   "dependencies": {
     "install": "^0.13.0",
     "npm": "^10.3.0",
-    "svelte-pdf": "^1.0.20",
     "tuicss": "^2.1.2",
     "uuid": "^9.0.1",
     "vite-plugin-top-level-await": "^1.4.4",

@@ -6,6 +6,7 @@
     import Waveformparams from './waveformparams.svelte';
     import { browser } from '$app/environment';
     import { Color } from '$lib/utils';
+    import PictureScroll from '$lib/PictureScroll.svelte';
 
     const argb = writable<number[]>([]);
     const led_div_width = writable<number>(0);
@@ -130,19 +131,7 @@
             <Waveformparams bind:waveform={waveform2} name="Blue" LEDs={32}/>
         </div>
     </div>
-    <div class="flex shadow border m-8 rounded-lg variant-glass-surface">
-        <div class="snap-x scroll-px-4 snap-mandatory scroll-smooth flex gap-4 overflow-x-auto px-4 py-10">
-            <div class="snap-start shrink-0 card my-auto w-40 md:w-4/6 text-center">
-                <img src="{schematicUrl}" alt="Schematic" class="rounded-lg"/>
-            </div>
-            <div class="snap-start shrink-0 card my-auto w-40 md:w-4/6 text-center">
-                <img src="{pcb2dUrl}" alt="Schematic" class="rounded-lg"/>
-            </div>
-            <div class="snap-start shrink-0 card my-auto w-40 md:w-4/6 text-center">
-                <img src="{pcb3dUrl}" alt="Schematic" class="rounded-lg"/>
-            </div>
-        </div>
-    </div>
+    <PictureScroll urls={[schematicUrl, pcb2dUrl, pcb3dUrl]} />
     <div class="shadow border m-8 rounded-lg variant-glass-surface p-2">
         <p class="m-3">
             I wanted a place to show off my watercolor paintings and decided to build a picture frame using Adafruit Dotstar LEDs to illuminate the art. Something likely
