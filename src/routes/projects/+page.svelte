@@ -46,29 +46,29 @@
                 as a replacement for the Raspberry Pi using an STM32G474 and integrating several Adafruit sub-circuits on the PCB. 
             </p>
             <p>
-                The design requirements were gathered from a few different conversations and this wasn't an official work project, so I thought it would be nice to share my results with others. I'd like to think it also demonstrates 
-                that I pay attention when others are talking about their projects and needs and be attentive to those needs when I have some spare time. 
-                You may be asking yourself, why not ohm out BBot and reverse engineer the circuit? Great question, glad you asked. I'm in Texas and BBot resides in Oakland, CA and there is only 1 BBot, 
+                The design requirements were gathered from a few different conversations and this wasn't an official work project, so I thought it would be nice to share my results with others. 
+                I'd like to think it also demonstrates my ability to pay attention when others are talking about their projects and that I can be attentive to those needs when I have some spare time. 
+                This project was particularly challenging because we didn't have the schematics for the original circuit. So I didn't have an official requirements document nor the original
+                circuit the crib off of. You may be asking yourself, why not ohm out BBot and reverse engineer the circuit? Great question, glad you asked. I'm in Texas and BBot resides in Oakland, CA and there is only 1 BBot, 
                 so that was would have been a big ask. 
             </p>
             <p>
-                This project was particularly challenging because we didn't have the schematics for the original circuit. So I didn't have an official requirements document nor the original
-                circuit the crib off of. The circuit was designed in KiCad to help me learn that tool, which has been really worth it. It is much more intuitive for me than Altium (phew, 
-                don't get me started) and I ended up using KiCad for my picture frame project as well.
+                The circuit was designed in KiCad to help me learn that tool, which has been really worth it. It is much more intuitive for me than Altium (phew, 
+                don't get me started) and I ended up using KiCad for the picture frame project as well.
             </p>
             <h1>Requirements:</h1>
             <ul class="list-disc ml-8 mb-4">
                 <li class="mb-4">
                     <h2>Doesn't use a Raspberry Pi</h2>
                     <p class="ml-8">
-                        At my last company we moved from a TM4C123 to an STM32G474, so I chose the STM32G474 since I've got a lot of experience with it. STM documentation is pretty
-                        damn good as well: application notes, datasheets, and MCU manuals.
+                        At my last company we moved from a TM4C123 to an STM32G474, so I chose the STM32G474 for this project since I've got a lot of experience with it. STM documentation is pretty
+                        damn good as well: application notes, datasheets, and MCU manuals. S tier MCU and IC company.
                     </p>
                 </li>
                 <li>
                     <h2>Powered by the primary battery</h2>
                     <p class="ml-8">
-                        Due to previous design choices, the Raspberry Pi is powered by a secondary battery. This battery needs to be popped out and 
+                        Due to previous design choices, the current Raspberry Pi is powered by a secondary battery. This battery needs to be popped out and 
                         charged and has been a source of consternation for those running BBot for demos. I designed and added my first buck converter circuit that can step 6 to 60V
                         down to 5V, with an additinal 3.3V linear regulator to power most of the electronics. BBot is powere by a pretty beefy battery pack 
                     </p>
@@ -152,10 +152,12 @@
                     <h2>VRef on the SWD header is not VRef from the MCU</h2>
                     <p class="ml-8">
                         Another holy shit level mess up. The SWD header needs a VRef to measure the power to the MCU. The MCU has a VRef pin on it. Like peanut butter and chocolate, just 
-                        hook them up and good to go. Jimmy jammed by the naming. The STM32 VRef pin is pretty confusing on the G474. It can be a source of a few different voltages, or a 
-                        sink for the ADC VRef. It took me a few hours to figure out what I did wrong, but was easy enough to fix: Vref on the MCU was soldered over to the 3.3V line since
-                        the intention for the ADC is just full voltage quantization and nothing small signal or and 
-                        VRef on the MCU header had a jumper wire soldered to the 3.3V line. Fixed in V2.
+                        hook them up and good to go. Jimmy jammed by the naming. The STM32 VRef pin is pretty confusing on the G474: it can be a source of a few different voltages, or a 
+                        sink for the ADC VRef, which is what I wanted. The way it is currently laid out it is 0v to the ADC and the SWD header. Dang.
+                    </p>
+                    <p>
+                        It took me an hour to figure out what I did wrong, but was easy enough to fix: VRef on the MCU was soldered over to the 3.3V line since
+                        the intention for the ADC is just full voltage quantization and nothing small signal or and VRef on the MCU header had a jumper wire soldered to the 3.3V line. Fixed in V2.
                     </p>
                 </li>
                 <li>
