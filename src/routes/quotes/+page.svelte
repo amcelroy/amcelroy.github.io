@@ -145,7 +145,7 @@
         quote("Don’t matter how mad, strange or outrageous, folk’ll get bored of anything.", JOE_ABECROMBIE),
         quote("Continuity of consciousness rather than unbroken memory, that is the human soul.", PETER_F_HAMILTON),
         quote("Once you have built something—something that takes all your passion and will—it becomes more precious to you than your own happiness.", "Sofia Samatar"),
-        quote("n this book there are poems by people who lived a thousand years ago! Memory can’t do that—it can save a few poems for a few generations, but not forever. Not like this.", "Sofia Samatar"),
+        quote("In this book there are poems by people who lived a thousand years ago! Memory can’t do that—it can save a few poems for a few generations, but not forever. Not like this.", "Sofia Samatar"),
     ];
 
     $: shuffled = shuffle(quotes);

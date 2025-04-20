@@ -13,11 +13,31 @@
     let duration_minutes: number = 0;
 
     function compute_duration() {
-        duration_hours = end_time_hours + (end_time_am ? 0 : 12) - start_time_hours - (start_time_am ? 0 : 12);
-        duration_minutes = end_time_minutes - start_time_minutes;
+        let date_start = new Date();
+        let t_start_time_hours = start_time_hours;
+        if (!start_time_am) {
+            t_start_time_hours = start_time_hours + 12;
+        }
+        date_start.setHours(t_start_time_hours, start_time_minutes);
+
+        let date_end = new Date();
+        let t_end_time_hours = end_time_hours;
+        if (!end_time_am) {
+            t_end_time_hours = end_time_hours + 12;
+        }
+        date_end.setHours(t_end_time_hours, end_time_minutes);
+        let duration = date_end.getTime() - date_start.getTime();
+
+        duration_hours = Math.floor(duration / (1000 * 60 * 60));
+        duration_minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
+
+        // Deal with negative durations to make the hours work out correctly
+        if(duration_minutes < 0) {
+            duration_hours = duration_hours + 1;
+        }
     }
 
-    function hours_on_change(hours: number): number {
+    function hours_on_change(hours: number): number {       
         if (hours > 12) {
             return 12;
         } else if (hours < 1) {

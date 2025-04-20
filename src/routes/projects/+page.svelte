@@ -17,16 +17,18 @@
                 <a href="https://github.com/amcelroy/amcelroy.github.io" style="color: lightgreen;" target="_blank">https://github.com/amcelroy/amcelroy.github.io</a>
             </p>
 
-            <p>This website. I picked up http://austin.engineer and had a generic Google Site hosted there for a while. \
-            This wasn't very unique or customizable, so I went with hosting a site on GitHub pages. I also really wanted to use Svelte,
-            as that is what I use at work for GUI front ends when using Tauri. Skeleton UI looks really cool and had a nice starter
-            project that uses Vite + SvelteKit which made a natural choice for the project. Iconify is used to handle icons, and TuiCss
-            forms the graphics package for RaptorOS. </p>
+            <p>
+                This website. I picked up http://austin.engineer and had a generic Google Site hosted there for a while. 
+                This wasn't very unique or customizable, so I went with hosting a site on GitHub pages. I also really wanted to use Svelte,
+                as that is what I used at work for GUI front ends when using Tauri and some other web projects. Skeleton UI looks really cool and had a nice starter
+                project that uses Vite + SvelteKit which made a natural choice for the project. Iconify is used to handle icons, and TuiCss
+                forms the graphics package for RaptorOS. 
+            </p>
             
             <p>
-            RaptorOS is a small work in progress program that has retro stylings that will host engineering tools that I typically use.
-            The first "app" in RaptorOS will be simple bit manipulation tools that I use when writing firmware. Currently, it can spawn 
-            "Applications" which are windows that can be moved around and closed. 
+                RaptorOS is a small work in progress program that has retro stylings that will host engineering tools that I typically use.
+                The first "app" in RaptorOS will be simple bit manipulation tools that I use when writing firmware. Currently, it can spawn 
+                "Applications" which are windows that can be moved around and closed. 
             </p>
         </GithubProject >
         <PatentProject header="US 12,213,810 - Systems and methods for automated coronary plaque characterization and risk assessment using intravascular optical coherence tomography">
