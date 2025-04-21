@@ -116,8 +116,7 @@
         quote("But for a society built on exploitation, there is no greater threat than having no one left to oppress.", N_K_JEMISIN),
         quote("Now all that was done, and he held the bow in his hands, to be strung and tillered, trimmed, smoothed and polished, the final layer " +
             "of parchment-thin rawhide to be wrapped round." +
-            "" +
-            "&nbsp;&nbsp;&nbsp;&nbsp;In his hands now, it was as ugly and messy as a new-born baby; a man-made limb, put together out of bone, tendon, blood and skin," + 
+            "In his hands now, it was as ugly and messy as a new-born baby; a man-made limb, put together out of bone, tendon, blood and skin," + 
             " with all the body parts refined, corrected, pulled out and put back together again in a better, more efficient way. On the back, " + 
             "the tendons to be stretched, in the belly the bone to be crushed and compressed, the two held apart by an intrusive wafer of timber," 
             + " held together by blood, skin and bone-dust; an arm stronger than any man’s arm when stretched and crushed to the very point of destruction," + 
