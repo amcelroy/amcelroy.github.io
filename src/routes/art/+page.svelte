@@ -294,6 +294,20 @@
             <iframe src="https://drive.google.com/file/d/1-I_Pg6JKEPl8qZR3Wa4-fKCNOIQmNtz7/preview" 
                 width="640" height="480" allow="autoplay" title="Potato flexing with a speedo"></iframe>
         </Art>
+        <Art title="Mother's Day">
+            <p>
+                Mother's Day masking tape fun. My wife really, really wants to do a mosaic class tomorrow for Mother's day, and my mom and sister are attending also.
+                I thought to try and match the theme with some mosaic-like watercolors. It was fun and pretty straight forward using a knife to cut strips of paper
+                and arrange them in different patterns. I did one stained glass one for my Mom since she used to do stained class, a bamboo themed one for Sara, and 
+                a kind of star burst pattern for my sister.
+            </p>
+            <p>
+                It was fun to prep and paint them, and they are on cute little pre-cut card stock. Hope they are a hit!
+            </p>
+            <iframe src="https://drive.google.com/file/d/17eVHrf7FNkkNJ4Po523TDyFw8R0UxLdc/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1lIZCnF0asWQ_f1BlCdFDOJmghMu4ktkb/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1wbIoTqpRCKCxTw5UxZtyxG15CshUaPqo/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
     </Accordion>
 </div>
 
