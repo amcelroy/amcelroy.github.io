@@ -21,32 +21,37 @@ export enum Endian {
   Big = 0,
   Little = 1,
 }
+export enum WaveformMode {
+  Dynamic = 0,
+  InPlace = 1,
+}
+/**
+ * Different types of waveforms that can be generated.
+ */
 export enum WaveformType {
   Sine = 0,
   Square = 1,
   Triangle = 2,
   Sawtooth = 3,
   Noise = 4,
+  Bounce = 5,
 }
+/**
+ * Parameters for calculating a waveform.
+ */
 export class WaveformParams {
   private constructor();
   free(): void;
-  static new(dt: number, amplitude: number, freq: number, phase: number, offset: number): WaveformParams;
+  static new(dt: number, amplitude: number, freq: number, phase: number, offset: number, waveform: WaveformType, mode: WaveformMode): WaveformParams;
+  /**
+   * Copy the parameters to a new struct.
+   */
   get(): WaveformParams;
-  set_dt(dt: number): void;
-  set_amplitude(amplitude: number): void;
-  set_freq(freq: number): void;
-  set_phase(phase: number): void;
-  set_offset(offset: number): void;
-  set(w: WaveformParams): void;
-  get_amplitude(): number;
-  get_freq(): number;
-  get_phase(): number;
-  get_offset(): number;
-  get_dt(): number;
   amplitude: number;
   freq: number;
   phase: number;
   offset: number;
   dt: number;
+  waveform: WaveformType;
+  mode: WaveformMode;
 }

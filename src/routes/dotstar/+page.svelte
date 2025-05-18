@@ -16,9 +16,9 @@
     const DOT_OFFSET: number = DOT_SIZE/2;
     const DT = 1 / 32;
 
-    let waveform0 = wasm.WaveformParams.new(DT, 1, .5, 0, 0);
-    let waveform1 = wasm.WaveformParams.new(DT, 1, .5, 3.14/2, 0);
-    let waveform2 = wasm.WaveformParams.new(DT, 1, .5, 3.14, 0);
+    let waveform_params_0 = wasm.WaveformParams.new(DT, 1, .5, 0, 0, wasm.WaveformType.Sine, wasm.WaveformMode.Dynamic);
+    let waveform_params_1 = wasm.WaveformParams.new(DT, 1, .5, 3.14/2, 0, wasm.WaveformType.Sine, wasm.WaveformMode.Dynamic);
+    let waveform_params_2 = wasm.WaveformParams.new(DT, 1, .5, 3.14, 0, wasm.WaveformType.Sine, wasm.WaveformMode.Dynamic);
 
     const schematicUrl = new URL('./schematic.png', import.meta.url).href;
     const pcb2dUrl = new URL('./pcb_2d.png', import.meta.url).href;
@@ -88,9 +88,9 @@
         //console.log(wasm.argb_array());
         argb.set([...wasm.argb_array()]);
         timer = setInterval(() => {
-            wasm.update_waveform(0, waveform0.get());
-            wasm.update_waveform(1, waveform1.get());
-            wasm.update_waveform(2, waveform2.get());
+            wasm.update_waveform(0, waveform_params_0.get());
+            wasm.update_waveform(1, waveform_params_1.get());
+            wasm.update_waveform(2, waveform_params_2.get());
             wasm.tick();
             argb.set([...wasm.argb_array()]);
             let color_arr =$argb.map((v) => new Color().from_u32(v)); 
@@ -126,9 +126,9 @@
         <div class="m-auto">
             <!-- Set the parameters for the different waveforms -->
             <button class="button" on:click={() => wasm.reset()}>Stop</button>
-            <Waveformparams bind:waveform={waveform0} name="Red" LEDs={32}/>
-            <Waveformparams bind:waveform={waveform1} name="Green" LEDs={32}/>
-            <Waveformparams bind:waveform={waveform2} name="Blue" LEDs={32}/>
+            <Waveformparams bind:waveform={waveform_params_0} name="Red" LEDs={32}/>
+            <Waveformparams bind:waveform={waveform_params_1} name="Green" LEDs={32}/>
+            <Waveformparams bind:waveform={waveform_params_2} name="Blue" LEDs={32}/>
         </div>
     </div>
     <PictureScroll urls={[schematicUrl, pcb2dUrl, pcb3dUrl]} />
