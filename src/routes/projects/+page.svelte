@@ -70,7 +70,7 @@
                     <p class="ml-8">
                         Due to previous design choices, the current Raspberry Pi is powered by a secondary battery. This battery needs to be popped out and 
                         charged and has been a source of consternation for those running BBot for demos. I designed and added my first buck converter circuit that can step 6 to 60V
-                        down to 5V, with an additinal 3.3V linear regulator to power most of the electronics. BBot is powere by a pretty beefy battery pack 
+                        down to 5V, with an additinal 3.3V linear regulator to power most of the electronics. BBot is powered by a pretty beefy battery pack 
                     </p>
                 </li>
                 <li>
@@ -151,7 +151,7 @@
                 <li>
                     <h2>VRef on the SWD header is not VRef from the MCU</h2>
                     <p class="ml-8">
-                        Another holy shit level mess up. The SWD header needs a VRef to measure the power to the MCU. The MCU has a VRef pin on it. Like peanut butter and chocolate, just 
+                        The SWD header needs a VRef to measure the power to the MCU. The MCU has a VRef pin on it. Like peanut butter and chocolate, just 
                         hook them up and good to go. Jimmy jammed by the naming. The STM32 VRef pin is pretty confusing on the G474: it can be a source of a few different voltages, or a 
                         sink for the ADC VRef, which is what I wanted. The way it is currently laid out it is 0v to the ADC and the SWD header. Dang.
                     </p>
@@ -172,7 +172,6 @@
                     <h2>Ask questions about the existing design</h2>
                     <p class="ml-8">
                         This one seems obvious but wasn't feasible on this project. The engineer that put together BBot had left the company and didn't leave behind any schematics or notes. 
-                        Nobody mentioned that I2C on the IMU was a massive pain in the ass, but to be fair, I didn't ask either. 
                     </p>
                 </li>
             </ul>
@@ -195,7 +194,7 @@
             </p>
 
             <p>
-                Our company uses microcontrollers, a lot. Almost every project involves using a microcontroller to do a particular task 
+                BridgeSource used microcontrollers, a lot. Almost every project involves using a microcontroller to do a particular task 
                 and communicate the results elsewhere. What we lacked was a coherent messaging protocol that could be used over and over.
                 I had come up with a C version of FLEM in grad school for an IoT class and used it in some of the early projects at BridgeSource.
                 FLEM is designed to be hardware agnostic, so it can be used on any bus, and has been used with UART, I2C, and BLE hardware protocols.  
@@ -269,14 +268,14 @@
             </p>
 
             <p>
-                In a prior life, I did a LOT of image and signal processing for Optical Coherence Tomography (OCT) and it needed to be done fast.
+                In a prior life, I did a lot of image and signal processing for Optical Coherence Tomography (OCT) and it needed to be done fast.
                 Swept source OCT, where the laser sweeps over a range of wavelengths over time, requires a Fourier Transform on the interfered data
-                to map the fringe frequency to depth and represents an A-Scan, the depth of a single location. A B-Scan is constructed of A-Scans, and 
-                represents a 2D image or slice of a sample, like a typical ultrasound image. A series of B-Scans is a C-Scan an is a volume. 
+                to map the fringe frequency to depth that represents an A-Scan. A B-Scan is constructed of A-Scans, and 
+                represents a 2D image or slice of a sample, like a typical ultrasound image. A series of B-Scans is a C-Scan and is a volume. 
             </p>
             <p>
-                An A-Scan depends on many things, but on the electronics side it depends on the sampling rate of the ADC and the sweep time of the laser. A 
-                modern swept source laser may operate at 200kHz with a 2,048 points per more per sweep, requiring an FFT to be performed on the order of 
+                An optical A-Scan depends on many things, but on the electronics side it depends on the sampling rate of the ADC and the sweep time of the laser. A 
+                modern swept source laser may operate at 200kHz with a 2,048 points or more per sweep, requiring an FFT to be performed on the order of 
                 microseconds. 
             </p>
             <p>
@@ -287,8 +286,9 @@
                 and the University of Texas and the grad students could pick it up even if they weren't programmers. 
             </p>
             <p>
-                I decided to try and commercialize a plugin for Labview that would allow people to use OpenCL easily, and spun up my consulting company, Raptorview,
-                to do it. Well, I got exactly 0 customers, but it was a fun project and a lesson in market research; I eventually Open Sourced it after a while.
+                I decided to try and commercialize a plugin for Labview that would allow people to use OpenCL easily, and spun up my consulting company, RaptorView,
+                to do it. Well, I got exactly 0 customers, but it was a fun project and a lesson in market research; I eventually Open Sourced it after a while. RaptorView
+                is still around as an on and off again consulting company. 
             </p>
         </GithubProject>
         <PatentProject header="US 8,593,641 - Apparatus and methods for uniform frequency sample clocking">
@@ -297,25 +297,29 @@
     
 
             <p>
-                My first two patents were at CardioSpectra, a small startup out of the University of Texas, Austin started by Dr. Thomas Milner and Dr. Marc Feldmna, with Dr. Nate Kemp
+                My first two patents were at CardioSpectra, a small startup out of the University of Texas, Austin started by Dr. Thomas Milner and Dr. Marc Feldman, with Dr. Nate Kemp
                 as the technical lead. I had just left Applied Materials in 2006 and was going to go back to UT - Austin for a PhD in BME and landed up in Dr. Milner's lab. CardioSpectra
                 had just been formed and needed help with electronics, signal acquisition, and processing. I decided to join as a full time engineer since all of the things they needed help
                 with I wanted to learn.
             </p>
 
             <p>
-                This particular patent and implementation was to solve a problem that required substantial software resources to resample a signal. An A-Scan is the result of a laser that is 
+                This particular patent and implementation was to solve a problem that required substantial software resources to resample a signal. An A-Scan formed by a laser that is 
                 swept over a range of wavelengths that is linear in time, but non-linear in k-space:
             </p>
             <body>
                 <MathJax math="{wavenumber}"></MathJax>
             </body>
             <p>
-                When the data is acquired in linear time, it needs to be re-interpolated. The indecies of the re-interpolation are typically generated from a mirror at some depth which causes
+                A reference arm is constructed with a mirror and has a length similar to the sample arm, which includes all of the optics to get the light to the sample. The interfered light
+                is a series of sinusoidal signals that constructively interfered. The freqeunecy of the fringes and their amplitude map to the depth and intensity of the returned signal at a depth. 
+                Take the fourier transform of the interfered signal and stitch A-Scans together and you have a B-Scan and an image. 
+            </p>
+            <p>
+                When the interfered signal is acquired in linear time, it needs to be re-interpolated. The indecies of the re-interpolation are typically generated from a mirror at some depth which causes
                 a frequency modulated sinusoid; the zero crossings of the sinusoid are the interpolation indecies. These indecies would need to be acquired at the start of an experiement and usually
                 were tied to the medium being imaged, which wasn't a mirror, and could drift over time.
             </p>
-
             <p>
                 The solution we came up with was to generate a non-linear clock that could be used as a sample clock for an ADC. Most ADCs require linear sampling, so we had to track down a high speed ADC that
                 that was suitable, as well as an analog to digital circuit that could generate digtal zero-crossings from the analog optical interference signal. My contribution was to build out photodetectors
@@ -327,25 +331,22 @@
             <p>
                 <a href="https://patentimages.storage.googleapis.com/c3/bc/73/013b41d9bf5925/US9347765.pdf" style="color: lightgreen;" target="_blank">Patent</a>
             </p>
-
             <p>
-                Taking a swept source (frequency domain) A-Scan and converting it to a depth (time domain) A-Scan requires a Fourier Transform. The fourier transform maps optical frequency to depth and 
-                and a key step to generating frequency domain OCT B-Scans. Depending on the clock, hundreds to thousands of points may be contained in the A-Scan, with tens to hundreds of thousands of
-                A-Scans per second. Since our early work was research, we couldn't compress or throw data away, since it was unclear what data would be useful, so we needed to go from U16 ADC data to 
+                Taking a swept source (frequency domain) A-Scan and converting it to a depth A-Scan requires a Fourier Transform. The fourier transform maps interference frequency to depth and 
+                and a key step to generating OCT B-Scans. Depending on the clock, hundreds to thousands of points may be contained in the A-Scan, with tens to hundreds of thousands of
+                A-Scans per second. Since our early work was research, we couldn't compress or throw data away, since it was unclear what data would be useful, we needed to go from U16 ADC data to 
                 F32 Real and Imaginary data, compute the magnitude of the complex data, and use logs to scale the data for display. 
             </p>
-
             <p>
                 CUDA had just been released by NVIDIA as an Alpha library that allowed general computation on a GPU, something that is ubiquitous these days. We realized that we could offload the A-Scans to 
-                GPU and perform the A-Scan image processing pipeline without the CPU. This was in the days of dual core computers, so freeing up a processor was a pretty big deal. My contribution was to write the 
+                GPU and perform the A-Scan image processing pipeline with minimal CPU use. This was in the days of dual core computers, so freeing up a processor was a pretty big deal. My contribution was to write the 
                 C library that was consumed raw A-Scans and generated processed A-Scans. This combined with the elimination of re-sampling the A-Scan was a pretty big step forward in the processing of OCT 
                 images in real time, and I'm really proud to have contributed to furthering the field.
             </p>
-
             <p>
                 This work inspired me to write the Labview OpenCL library, as I saw OpenCL as a better approach to CPU/GPU scientific computing. You can read how that project ended up above, but I went on
                 to write several algorithms at UT in OpenCL: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3055590/">Speckle Processing</a>, 
-                <a href="https://pubmed.ncbi.nlm.nih.gov/35589781/">Blood Flow Detection</a>, and Polarization linear fit algorithm on a stack of 7 images. 
+                <a href="https://pubmed.ncbi.nlm.nih.gov/35589781/">Blood Flow Detection</a>, and Polarization linear fit algorithm on a stack of 7 4096x4096 images. 
             </p>
         </PatentProject>
         <Project header="ABBU - Automated Bridge Breathing Unit">
