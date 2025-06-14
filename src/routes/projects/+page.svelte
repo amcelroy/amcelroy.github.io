@@ -136,7 +136,7 @@
                 <li class="mb-4">
                     <h2>Read the protocol application note for a complex IC like an IMU and don't use I2C for the BNO085</h2>
                     <p class="ml-8">
-                        Holy shit I messed this up. The protocol for this IC was in an entirely different app note, and the datasheet indicated that the IMU was straighfoward to use over
+                       The protocol for this IC was in an entirely different app note, and the datasheet indicated that the IMU was straighfoward to use over
                         I2C: I2C address, read and write, easy peasy. Nope. The I2C bus is essentially used as a serial bus with packet headers and everything. There is an easy to use UART 
                         mode that just spits out data on a UART line at 100Hz, I guess that is why the original engineer picked that. Oops. Fixed in V2.
                     </p>
