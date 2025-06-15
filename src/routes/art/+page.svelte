@@ -1,6 +1,9 @@
 <script lang="ts">
     import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
     import Art from './Art.svelte';
+    import { title } from 'process';
+    import { on } from 'events';
+    import wasm from 'vite-plugin-wasm';
 
 </script>
 
@@ -307,6 +310,20 @@
             <iframe src="https://drive.google.com/file/d/17eVHrf7FNkkNJ4Po523TDyFw8R0UxLdc/preview" width="640" height="480" allow="autoplay"></iframe>
             <iframe src="https://drive.google.com/file/d/1lIZCnF0asWQ_f1BlCdFDOJmghMu4ktkb/preview" width="640" height="480" allow="autoplay"></iframe>
             <iframe src="https://drive.google.com/file/d/1wbIoTqpRCKCxTw5UxZtyxG15CshUaPqo/preview" width="640" height="480" allow="autoplay"></iframe>
+        </Art>
+        <Art title="Father's Day">
+            <p>
+                This Father's Day I painted my dad an Outlaw Sprint car. We used to go to Wilmot racetrack in Wisconsin when we lived in Illinois, usually on
+                a Saturday night. I was probably 7 to 12 when we would go, and I remember the races so vividly. The smell of exhaust, the dirt flying up as the cars 
+                drifted around the corners, the roar of the engines, the popping of the backfire as the cars slowed into the turns. The drives wore these tear away mylar 
+                visor protectors they would rip off mid race, and it was super exciting to collect one that had drifted close to the fence. The crashes were always
+                a specticle the got the crowds on their feet; clapping as the driver emerged from the car and walked off. 
+            </p>
+            <p>
+                I really enjoyed spending time with my dad there. He kept notebooks of the races with lap times, driver name, car numbers, and position each lap. It was
+                a super engineering thing to do, but I love it.
+            </p>
+            <iframe src="https://drive.google.com/file/d/1PYGYRamKFn2km-BgsX0BxnlqWEVvcpy4/preview" width="640" height="480" allow="autoplay"></iframe>
         </Art>
     </Accordion>
 </div>
