@@ -24,6 +24,9 @@
     const pcb2dUrl = new URL('./pcb_2d.png', import.meta.url).href;
     const pcb3dUrl = new URL('./pcb_3d.png', import.meta.url).href;
 
+    const crystal_gif = new URL('./crystal.gif', import.meta.url).href;
+    const still_crystal = new URL('./still.jpeg', import.meta.url).href;
+
     let timer: NodeJS.Timeout | null = null;
 
     let chart_init = false;
@@ -112,6 +115,13 @@
 <svelte:window on:resize={dispatchResize} on:load={dispatchResize}/>
 
 {#if $argb}
+    <div class="shadow border m-8 rounded-lg variant-glass-surface p-2">
+        <p class="m-3">
+            This control panel simulates what you should see on a Raptura light engine. An LED is "off" when it has a values of -1.0 in floating point space, and is 
+            fully on when at 1.0. To disable an LED, set the offset to -1.0 and amplitude to 0.0.
+        </p>
+    </div>
+
     <div class="shadow border m-8 rounded-lg variant-glass-surface"  id="LEDS">
         <div class="flex flex-row p-1 justify-between">
             {#each [...$argb] as v}
@@ -125,12 +135,12 @@
     <div class="flex shadow border m-8 rounded-lg variant-glass-surface">
         <div class="m-auto">
             <!-- Set the parameters for the different waveforms -->
-            <button class="button" on:click={() => wasm.reset()}>Stop</button>
             <Waveformparams bind:waveform={waveform_params_0} name="Red" LEDs={32}/>
             <Waveformparams bind:waveform={waveform_params_1} name="Green" LEDs={32}/>
             <Waveformparams bind:waveform={waveform_params_2} name="Blue" LEDs={32}/>
         </div>
     </div>
+    <PictureScroll urls={[crystal_gif, still_crystal]} />
     <PictureScroll urls={[schematicUrl, pcb2dUrl, pcb3dUrl]} />
     <div class="shadow border m-8 rounded-lg variant-glass-surface p-2">
         <p class="m-3">
@@ -147,11 +157,10 @@
             the 8-bit space. The superposition of the waveforms maps to color. We have smooth dynamic, programmable, lighting. Let there be light!
         </p>
         <p class="m-3">
-            One of the cool things about embedded Rust is working in with core and no_std libraries. This usually means a small feature set with minimal
-            memory allocation on the heap. There are heap allocators in Rust for no_std, but generally the more that is known at compile time the 
-            better things will be. This also means fewer concurrency options to safely share data. Web Assembly, WASM, has similar limitations to the embedded space. 
-            This means libraries written in no_std Rust can be exported relatively 
-            easily to WASM. The waveforms above are generated in a Rust library that I have been working on to control the Adafruit Dotstar LED strips. They have an addressable
+            One of the cool things about embedded Rust is working in with core and no_std libraries. This usually means a smaller feature set with stack only
+            memory allocation due to missing heap allocators. <code>dotstar-rs</code>, the library I wrote to control the LEDs, uses heapless data structures so that it
+            can run on a no_std MCU as well as Web Assembly, or WASM, as it has similar limitations. 
+            The waveforms above are generated in a Rust library that I have been working on to control the Adafruit Dotstar LED strips. They have an addressable
             LED protocol that has a start frame, a series of digital data for each LED, and an end frame. Each white light or RGB LED takes 32 bits of data
             to program: the 3 upper bits are 1, followed by 5 bits for a global alpha, followed by 8 bits for blue, green, and red (or white, white, white
             for the mono-color). The update rate is really high using the SPI bus with a core clock speed of 8 MHz means we can spit out data at

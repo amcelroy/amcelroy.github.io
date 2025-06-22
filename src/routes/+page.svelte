@@ -21,7 +21,7 @@
         Programming has become a passion, hobby, and career, doing projects in: C, Labview, C++, CUDA, OpenCL, Python, Typescript,
         and Rust. Mostly in that order. Most of my work now is Rust, Typescript, and Python. All of my firmware in the 
         last few years is exclusively in Rust, including hobby projects like the picture frame and supporting libraries
-        to run the <code>dotstar</code> LEDs
+        to run the <code>dotstar</code> LEDs.
     </p>
 
     <p>
@@ -33,7 +33,8 @@
     <p>
         Most of my previous work has been in biomedical R and D, working on a variety of projects from Optical Coherence Tomography (OCT)
         imaging systems, speckle flood flow imaging, pace maker detectors, multi-mesh nebulizers, cardiac admittance volume
-        measurement systems, 3D printer laser sintering control systems and high speed imaging, and more.
+        measurement systems, 3D printer laser sintering control systems and high speed imaging, and more. My new job is definitely a change of pace, 
+        but I am enjoying the new challenges.
     </p>
 
     <p>
