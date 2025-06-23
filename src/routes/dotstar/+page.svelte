@@ -173,3 +173,12 @@
         </p>
     </div>
 {/if}
+
+<style>
+    code {
+        color:orange;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+</style>

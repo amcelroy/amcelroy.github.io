@@ -62,6 +62,7 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
+				<img alt="logo" src="/logo.png" width=32 height=23/>
 				<strong class="text-xl uppercase">Austin McElroy, M.S.E.E</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
