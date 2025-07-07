@@ -197,7 +197,7 @@
         </Art>
         <Art title="Spirograph in Frame" description="">
             <p> 
-                On of my hobby projects is to make a picture frame with dynamic lighting, you read about it <a href="/dotstar" style="color: green;">here.</a>
+                On of my hobby projects is to make a picture frame with dynamic lighting, you read about it <a href="/raptura" style="color: green;">here.</a>
                 It has been a fun project to get back into PCB design and get better at BLE. This is a spirograph I made using some of the metallic gel ink pens 
                 that Sara got me for my birthday. 
             </p>
