@@ -1,9 +1,6 @@
 <script lang="ts">
     import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
     import Art from './Art.svelte';
-    import { title } from 'process';
-    import { on } from 'events';
-    import wasm from 'vite-plugin-wasm';
 
 </script>
 
