@@ -20,6 +20,12 @@
 				</svelte:fragment>
 				<span>Home</span>
 			</AppRailAnchor>
+			<AppRailAnchor href="/historicle" selected={$page.url.pathname === '/historicle'}>
+				<svelte:fragment slot="lead">
+					<img alt="Historicle" src="/historicle.png" width=24 height=24/>
+				</svelte:fragment>
+				<span>Historicle</span>
+			</AppRailAnchor>
 			<AppRailAnchor href="/raptura" selected={$page.url.pathname === '/raptura'}>
 				<svelte:fragment slot="lead">
 					<Icon icon="material-symbols:stars-rounded" style="font-size: 24px;"/>
