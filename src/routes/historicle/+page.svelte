@@ -16,8 +16,8 @@
     <p class="m-3">
         Storage is so cheap that we keep the most worthless things and lose the most important. The
         blurry photos, the invoice emails, and the throwaway posts survive; the thoughts behind them
-        do not. Our digital footprint records what we generated, never why it mattered. The dreams, the people, 
-        the reasons, the context, that goes missing.
+        do not. Our digital footprint records what we generated, never why it mattered. The dreams, the people,
+        the reasons, the context — that's what goes missing.
     </p>
     <p class="m-3">
         I wanted something better: a curated, contextually rich story I could choose to tell and one
@@ -37,13 +37,13 @@
         tell my story. 
     </p>
     <p class="m-3">
-        This app been a long time in coming. I used to write NIH SBIR grants and went down a rabbit hole about 
+        This app has been a long time in coming. I used to write NIH SBIR grants and went down a rabbit hole about
         journaling and dementia. Turns out journaling is a remarkably healthy habit. It gives people a place to reflect 
         on what we have accomplished, celebrate the small daily moments, practice gratitude for what we have and dream 
         about what we don't, work through complex emotions, and most importantly exercise memory and recall. 
     </p>
     <p class="m-3">
-        A project and a motivation and a Claude Pro Max account, and I was off. Claude, make me a journaling app and make no mistakes.
+        A project and a motivation and a Claude Pro Max account, and I was off. <em>Claude, make me a journaling app and make no mistakes.</em>
     </p>
 </div>
 
@@ -81,11 +81,11 @@
         <li>
             <strong>Test driven development.</strong>  Another thing I've picked up from my current role is the value of test driven development. My 
             teammates have shown me the value of automated testing and CI tests. Good unit testing ensures current code passes checks, but even better
-            is regression testing, new code doesn't break old code. The Rust side has roughly ~2500  tests and the front end has ~850 tests.
+            is regression testing, new code doesn't break old code. The Rust side has roughly 2,000 tests and the front end has ~850 tests.
         </li>
         <li>
-            <strong>New feature? New Plan? New Branch.</strong> Not to re-hash a couple of prior points, but Historicle as evolved and had new features
-            beyond the original plan. How users can scroll through images and entires, exporting a GIF of favorites, MCP server, emotional analysis tools, 
+            <strong>New feature? New Plan? New Branch.</strong> Not to re-hash a couple of prior points, but Historicle has evolved and had new features
+            beyond the original plan. How users can scroll through images and entries, exporting a GIF of favorites, MCP server, emotional analysis tools,
             etc. Each was a new feature that got a new plan, a new branch, new tests, and a new PR. 
         </li>
     </ul>
@@ -116,16 +116,17 @@
     <p class="m-3">
         It has been a pretty wild journey kicking the tires of a modern coding LLM. The trend seems to be heading more and more into this direction
         and this project has been a great way to see how far it has come. A lot of this was just outside of my wheelhouse, SQL database management,
-        local LLM models, and a few other things, so I would estimate it would have taken me about 1 year full time to build this app myself. With Claude,
+        local LLM models, and a few other things, so I would estimate it would have taken me about 1 year full time to build this app myself and squash
+        all the bugs that have been squashed so far. With Claude,
         I was able to build a production ready app (I think it is in fantastic production shape!) in about 3 months on my nights and weekends, which is 
         pretty amazing. 
     </p>
     <p class="m-3">
-        If you've made it this far and are on macOS, check out historicle.ai and give it a try.
+        If you've made it this far and are on macOS, check out Historicle.ai and give it a try.
     </p>
     <p class="m-3">
         <a class="anchor" href="https://Historicle.ai" target="_blank" rel="noreferrer"
             >Historicle.ai</a
-        > 
+        > — on the macOS App Store, free demo.
     </p>
 </div>
