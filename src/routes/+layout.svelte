@@ -24,7 +24,7 @@
 				<svelte:fragment slot="lead">
 					<img alt="Historicle" src="/historicle.png" width=24 height=24/>
 				</svelte:fragment>
-				<span>Historicle</span>
+				<span>Historicle.ai</span>
 			</AppRailAnchor>
 			<AppRailAnchor href="/raptura" selected={$page.url.pathname === '/raptura'}>
 				<svelte:fragment slot="lead">
@@ -87,14 +87,6 @@
 					rel="noreferrer"
 				>
 					<Icon icon="academicons:google-scholar" style="font-size: 24px;"/>
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://stackoverflow.com/users/2521274/austin"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<Icon icon="logos:stackoverflow-icon" style="font-size: 24px;"/>
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"

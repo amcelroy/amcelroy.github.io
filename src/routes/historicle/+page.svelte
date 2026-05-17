@@ -1,17 +1,36 @@
 <script lang="ts">
+    import PictureScroll from '$lib/PictureScroll.svelte';
+
+    const screenshots = [
+        new URL('./images/journal.png', import.meta.url).href,
+        new URL('./images/timeline.png', import.meta.url).href,
+        new URL('./images/photos.png', import.meta.url).href,
+        new URL('./images/people.png', import.meta.url).href,
+        new URL('./images/interests.png', import.meta.url).href,
+        new URL('./images/interests1.png', import.meta.url).href,
+        new URL('./images/insights2.png', import.meta.url).href,
+        new URL('./images/smart_search.png', import.meta.url).href,
+        new URL('./images/history.png', import.meta.url).href,
+    ];
 </script>
+
+<div class="shadow border m-8 rounded-lg variant-glass-surface p-2 overflow-hidden">
+    <video
+        class="w-full rounded-lg"
+        src="/video_1.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        controls
+    >
+        <track kind="captions" />
+    </video>
+</div>
 
 <div class="shadow border m-8 rounded-lg variant-glass-surface p-2">
     <div class="flex flex-wrap items-center justify-between gap-4 m-3">
         <h1 class="h3">Why Historicle?</h1>
-        <a
-            class="btn variant-filled-primary"
-            href="https://Historicle.ai"
-            target="_blank"
-            rel="noreferrer"
-        >
-            Visit Historicle.ai
-        </a>
     </div>
     <p class="m-3">
         Storage is so cheap that we keep the most worthless things and lose the most important. The
@@ -27,6 +46,8 @@
         made.
     </p>
 </div>
+
+<PictureScroll urls={screenshots} />
 
 <div class="shadow border m-8 rounded-lg variant-glass-surface p-2">
     <h2 class="h3 m-3">Motivation</h2>
@@ -118,15 +139,22 @@
         and this project has been a great way to see how far it has come. A lot of this was just outside of my wheelhouse, SQL database management,
         local LLM models, and a few other things, so I would estimate it would have taken me about 1 year full time to build this app myself and squash
         all the bugs that have been squashed so far. With Claude,
-        I was able to build a production ready app (I think it is in fantastic production shape!) in about 3 months on my nights and weekends, which is 
+        I was able to build a production ready app in about 3 months on my nights and weekends, which is 
         pretty amazing. 
     </p>
     <p class="m-3">
         If you've made it this far and are on macOS, check out Historicle.ai and give it a try.
     </p>
-    <p class="m-3">
-        <a class="anchor" href="https://Historicle.ai" target="_blank" rel="noreferrer"
-            >Historicle.ai</a
-        > — on the macOS App Store, free demo.
-    </p>
+    <a
+        href="https://apps.apple.com/us/app/historicle-ai/id6757773690?mt=12"
+        target="_blank"
+        rel="noreferrer"
+        class="inline-block m-3 transition-opacity hover:opacity-80"
+    >
+        <img
+            src="/mac-app-store-badge.svg"
+            alt="Download on the Mac App Store"
+            class="h-14"
+        />
+    </a>
 </div>
