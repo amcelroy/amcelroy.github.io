@@ -7,3 +7,7 @@ declare namespace App {
 	// interface Error {}
 	// interface Platform {}
 }
+
+// Allow side-effect imports of stylesheets (e.g. `import '../app.postcss'`).
+declare module '*.postcss';
+declare module '*.css';

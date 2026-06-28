@@ -26,6 +26,12 @@
 				</svelte:fragment>
 				<span>Historicle.ai</span>
 			</AppRailAnchor>
+			<AppRailAnchor href="/vgc" selected={$page.url.pathname === '/vgc'}>
+				<svelte:fragment slot="lead">
+					<img alt="Virtual Geocache" src="/vgc-compass.png" width=24 height=24/>
+				</svelte:fragment>
+				<span>Virtual Geocache</span>
+			</AppRailAnchor>
 			<AppRailAnchor href="/raptura" selected={$page.url.pathname === '/raptura'}>
 				<svelte:fragment slot="lead">
 					<Icon icon="material-symbols:stars-rounded" style="font-size: 24px;"/>
