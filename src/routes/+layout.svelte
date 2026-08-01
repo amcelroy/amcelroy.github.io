@@ -32,6 +32,12 @@
 				</svelte:fragment>
 				<span>Virtual Geocache</span>
 			</AppRailAnchor>
+			<AppRailAnchor href="/dads" selected={$page.url.pathname === '/dads'}>
+				<svelte:fragment slot="lead">
+					<Icon icon="gis:contour-map" style="font-size: 24px;"/>
+				</svelte:fragment>
+				<span>VHPMM</span>
+			</AppRailAnchor>
 			<AppRailAnchor href="/raptura" selected={$page.url.pathname === '/raptura'}>
 				<svelte:fragment slot="lead">
 					<Icon icon="material-symbols:stars-rounded" style="font-size: 24px;"/>
@@ -61,12 +67,6 @@
 					<Icon icon="game-icons:velociraptor" style="font-size: 24px;"/>
 				</svelte:fragment>
 				<span>RaptorOS</span>
-			</AppRailAnchor>
-			<AppRailAnchor href="/dads" selected={$page.url.pathname === '/dads'}>
-				<svelte:fragment slot="lead">
-					<Icon icon="gis:contour-map" style="font-size: 24px;"/>
-				</svelte:fragment>
-				<span>Dad's Project</span>
 			</AppRailAnchor>
 		</AppRail>
 	</svelte:fragment>
