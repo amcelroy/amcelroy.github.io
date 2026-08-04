@@ -18,27 +18,21 @@
     </p>
 
     <p>
-        Programming has become a passion, hobby, and career, doing projects in: C, Labview, C++, CUDA, OpenCL, Python, Typescript,
+        Most of my previous work has been in biomedical R and D, working on a variety of projects from Optical Coherence Tomography (OCT)
+        imaging systems, speckle flow imaging, pace maker detectors, multi-mesh nebulizers, cardiac admittance volume
+        measurement systems, 3D printer laser sintering control systems and high speed imaging, and more. My new job is definitely a change of pace, 
+        but I am enjoying the new challenges.
+    </p>
+
+    <p>
+        I enjoy working with computers, it is a hobby and career, delivering projects in: C, Labview, C++, CUDA, OpenCL, Python, Typescript,
         and Rust. Mostly in that order. Most of my work now is Rust, Typescript, and Python. All of my firmware in the 
         last few years is exclusively in Rust, including hobby projects like the picture frame and supporting libraries
         to run the <code>dotstar</code> LEDs.
     </p>
 
     <p>
-        I'm a Senior Software Engineer at Pictorus working on bringing Rust to model based design system for embedded systems. My current task is trying
-        to absorb as much of the software base as I can, implement new hardware protocols, PCB design, and helping re-write an open source implementation of 
-        the Rust project. It has been an amazing learning experience for CI/CD, Rust, generated code, and more. 
-    </p>
-
-    <p>
-        Most of my previous work has been in biomedical R and D, working on a variety of projects from Optical Coherence Tomography (OCT)
-        imaging systems, speckle flood flow imaging, pace maker detectors, multi-mesh nebulizers, cardiac admittance volume
-        measurement systems, 3D printer laser sintering control systems and high speed imaging, and more. My new job is definitely a change of pace, 
-        but I am enjoying the new challenges.
-    </p>
-
-    <p>
-        Hobbies: mountain biking (south Austin has a LOT of trails), roller blading, any biking with my son, date night with my wife, visiting with family,
+        Hobbies: mountain biking (south Austin has a LOT of trails), roller skating, any biking with my son, date night with my wife, visiting with family,
         3D printing, PCB design, firmware, any facet of electrical engineering, learning, trying to be a good human.
     </p>
 
