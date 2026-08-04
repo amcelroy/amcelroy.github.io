@@ -19,7 +19,7 @@
 </script>
 
 <div class="resume_div m-auto">
-    <iframe id="resume_frame" class="resume m-auto" src="https://drive.google.com/file/d/1FAOcufVF9zHriyX5vpJrmBarXvv5hD5I/preview" allow="autoplay"></iframe>
+    <iframe id="resume_frame" class="resume m-auto" src="https://drive.google.com/file/d/160-WEhr-nWD4Ssc4cXUt1DBkyise2JsI/preview" allow="autoplay"></iframe>
 </div>
 
 <style>
