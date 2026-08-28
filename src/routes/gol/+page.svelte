@@ -120,7 +120,7 @@
 <div class="shadow border m-8 rounded-lg variant-glass-surface p-2">
     <p class="m-3">
         I wanted a piece of engineering art for the wall that is never quite the same twice. Conway's Game of Life
-        is the obvious candidate &mdash; simple rules, endlessly varied behaviour &mdash; so I built a 64&times;64
+        is the obvious candidate, simple rules with endlessly varied behaviour, so I built a 64&times;64
         RGB LED matrix driven by an ESP32-S3 on a custom backpack PCB that mounts directly to the back of the panel.
     </p>
     <p class="m-3">
