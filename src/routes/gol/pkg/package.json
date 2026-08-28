@@ -1,0 +1,21 @@
+{
+  "name": "gol-wasm",
+  "type": "module",
+  "collaborators": [
+    "Austin McElroy <me@austin.engineer>"
+  ],
+  "description": "wasm-bindgen facade over the gol engine, for the austin.engineer demo",
+  "version": "0.1.0",
+  "files": [
+    "gol_bg.wasm",
+    "gol.js",
+    "gol_bg.js",
+    "gol.d.ts"
+  ],
+  "main": "gol.js",
+  "types": "gol.d.ts",
+  "sideEffects": [
+    "./gol.js",
+    "./snippets/*"
+  ]
+}

@@ -32,6 +32,12 @@
 				</svelte:fragment>
 				<span>Virtual Geocache</span>
 			</AppRailAnchor>
+			<AppRailAnchor href="/gol" selected={$page.url.pathname === '/gol'}>
+				<svelte:fragment slot="lead">
+					<Icon icon="mdi:grid" style="font-size: 24px;"/>
+				</svelte:fragment>
+				<span>Game of Life Matrix</span>
+			</AppRailAnchor>
 			<AppRailAnchor href="/dads" selected={$page.url.pathname === '/dads'}>
 				<svelte:fragment slot="lead">
 					<Icon icon="gis:contour-map" style="font-size: 24px;"/>
