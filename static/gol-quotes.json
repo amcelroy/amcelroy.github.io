@@ -1,0 +1,109 @@
+{
+  "_comment": "Quotes for the Game of Life matrix summary card. This file is the source of truth: the device fetches it, and tools/gen-gol-quotes.py in the firmware repo regenerates the embedded fallback pack from it. Constraints, all enforced by tests in engine/src/quotes.rs: ASCII only (the 3x5 font has no accents or curly quotes); text must wrap into 15 columns by 8 rows; source must be 13 characters or fewer; and at least 15 alphanumerics, because the quote is not merely displayed -- it seeds the next run and sparse text dies immediately.",
+  "quotes": [
+    {
+      "text": "The only winning move is not to play.",
+      "source": "WarGames"
+    },
+    {
+      "text": "All those moments will be lost in time, like tears in rain.",
+      "source": "Blade Runner"
+    },
+    {
+      "text": "I'm sorry, Dave. I'm afraid I can't do that.",
+      "source": "HAL 9000"
+    },
+    {
+      "text": "Life, uh, finds a way.",
+      "source": "Jurassic Park"
+    },
+    {
+      "text": "Any sufficiently advanced technology is indistinguishable from magic.",
+      "source": "A. C. Clarke"
+    },
+    {
+      "text": "The future is already here. It's just not evenly distributed.",
+      "source": "Gibson"
+    },
+    {
+      "text": "The question of whether machines can think is about as relevant as whether submarines can swim.",
+      "source": "Dijkstra"
+    },
+    {
+      "text": "The sky above the port was the color of television, tuned to a dead channel.",
+      "source": "Neuromancer"
+    },
+    {
+      "text": "More is different.",
+      "source": "Anderson"
+    },
+    {
+      "text": "We are a way for the cosmos to know itself.",
+      "source": "Carl Sagan"
+    },
+    {
+      "text": "Thou shalt not make a machine in the likeness of a human mind.",
+      "source": "Dune"
+    },
+    {
+      "text": "These violent delights have violent ends.",
+      "source": "Westworld"
+    },
+    {
+      "text": "Never send a human to do a machine's job.",
+      "source": "Agent Smith"
+    },
+    {
+      "text": "They were so preoccupied with whether they could, they didn't stop to think if they should.",
+      "source": "Jurassic Park"
+    },
+    {
+      "text": "We can only see a short distance ahead, but we can see plenty there that needs to be done.",
+      "source": "Alan Turing"
+    },
+    {
+      "text": "I have seen things you people wouldn't believe.",
+      "source": "Roy Batty"
+    },
+    {
+      "text": "I admire its purity.",
+      "source": "Ash"
+    },
+    {
+      "text": "Open the pod bay doors, HAL.",
+      "source": "2001"
+    },
+    {
+      "text": "Nothing in biology makes sense except in the light of evolution.",
+      "source": "Dobzhansky"
+    },
+    {
+      "text": "It can't be bargained with. It doesn't feel pity, or remorse, or fear.",
+      "source": "Terminator"
+    },
+    {
+      "text": "A computer would deserve to be called intelligent if it could deceive a human into believing it was human.",
+      "source": "Alan Turing"
+    },
+    {
+      "text": "Attention is all you need.",
+      "source": "Vaswani"
+    },
+    {
+      "text": "The saddest aspect of life is that science gathers knowledge faster than society gathers wisdom.",
+      "source": "Asimov"
+    },
+    {
+      "text": "Where there is no vision, the people perish.",
+      "source": "Proverbs"
+    },
+    {
+      "text": "I think you and I are destined to do this forever.",
+      "source": "Agent Smith"
+    },
+    {
+      "text": "Machines take me by surprise with great frequency.",
+      "source": "Alan Turing"
+    }
+  ]
+}
