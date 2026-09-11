@@ -15,6 +15,9 @@
 
     const GRID = 64;
     const STEP_MS = 100;
+    // Matches the panel: stats card, then a quote, then Life eats the quote.
+    const STATS_HOLD_MS = 6000;
+    const QUOTE_HOLD_MS = 10000;
 
     let board: wasm.GolBoard | null = null;
     let timer: NodeJS.Timeout | null = null;
@@ -25,6 +28,7 @@
     let generation = 0;
     let population = 0;
     let lastEnding = '';
+    let quote = '';
 
     function draw() {
         if (!browser || !board) return;
@@ -42,18 +46,26 @@
         population = board.population();
         draw();
         if (ending) {
-            // The board stopped being interesting -- say how, hold it a beat,
-            // then move to the next seed. Same logic the physical panel runs.
+            // The board stopped being interesting. Show the summary card, then
+            // a quote -- and the quote is what seeds the next run, because the
+            // card is written into the board rather than drawn over it. The
+            // dissolve you see is Life eating the text.
             lastEnding = `${board.seedName()} ${ending} after ${generation} generations`;
             running = false;
+
+            board.statsCard(ending);
+            draw();
+
             setTimeout(() => {
                 if (!board) return;
-                board.next_seed();
-                seedIndex = board.seedIndex();
-                generation = board.generation();
+                quote = board.quoteCard(Math.floor(Math.random() * 0xffffffff));
                 draw();
-                running = true;
-            }, 2000);
+                setTimeout(() => {
+                    if (!board) return;
+                    generation = 0;
+                    running = true;   // steps on from the quote
+                }, QUOTE_HOLD_MS);
+            }, STATS_HOLD_MS);
         }
     }
 
@@ -106,6 +118,9 @@
     </div>
     {#if lastEnding}
         <p class="m-3 text-center text-sm"><em>{lastEnding}</em></p>
+    {/if}
+    {#if quote}
+        <p class="m-3 text-center text-sm" style="color:var(--dim,#7c8797)">&ldquo;{quote}&rdquo;</p>
     {/if}
 </div>
 
