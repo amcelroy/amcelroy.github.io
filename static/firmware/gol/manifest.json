@@ -5,11 +5,11 @@
   "channel": "stable",
   "version": "0.2.0",
   "build": 2,
-  "published_at": "2026-09-26T01:47:24Z",
+  "published_at": "2026-09-27T14:23:00Z",
   "image": {
     "url": "https://austin.engineer/firmware/gol/gol-0.2.0+2.bin",
     "size": 3145728,
-    "sha256": "68fcab3b054aa622e52cd0bd17fc369ea5eb9edf5f38a39c8a4c13498d27f957"
+    "sha256": "7cd96ba369c0013678d22d799031e3d651f0a539ac2830783cd915366131f364"
   },
   "release_notes_url": "https://austin.engineer/gol"
 }
