@@ -4,12 +4,12 @@
   "target": "esp32s3",
   "channel": "stable",
   "version": "0.2.0",
-  "build": 3,
-  "published_at": "2026-09-27T15:40:27Z",
+  "build": 4,
+  "published_at": "2026-09-27T16:36:24Z",
   "image": {
-    "url": "https://austin.engineer/firmware/gol/gol-0.2.0+3.bin",
+    "url": "https://austin.engineer/firmware/gol/gol-0.2.0+4.bin",
     "size": 3145728,
-    "sha256": "addeeda320ae8452dbf476aee9f9088fcbbb5932d9cac879470093ea5a990b34"
+    "sha256": "4d9b175fe5774dc7d6084a55398b556dcaa349435272f752f90e31d26bb1e7a0"
   },
   "release_notes_url": "https://austin.engineer/gol"
 }
