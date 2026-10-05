@@ -638,10 +638,6 @@
       "source": "Picard"
     },
     {
-      "text": "Resistance is futile.",
-      "source": "The Borg"
-    },
-    {
       "text": "To boldly go where no one has gone before.",
       "source": "Star Trek"
     },
@@ -654,24 +650,8 @@
       "source": "Dune"
     },
     {
-      "text": "All of this has happened before, and all of this will happen again.",
-      "source": "Battlestar"
-    },
-    {
-      "text": "Sometimes you have to roll the hard six.",
-      "source": "Adama"
-    },
-    {
       "text": "You cannot stop the signal.",
       "source": "Serenity"
-    },
-    {
-      "text": "I aim to misbehave.",
-      "source": "Mal Reynolds"
-    },
-    {
-      "text": "We have done the impossible, and that makes us mighty.",
-      "source": "Mal Reynolds"
     },
     {
       "text": "The truth is out there.",
@@ -684,18 +664,6 @@
     {
       "text": "So long, and thanks for all the fish.",
       "source": "D. Adams"
-    },
-    {
-      "text": "The avalanche has already started. It is too late for the pebbles to vote.",
-      "source": "Babylon 5"
-    },
-    {
-      "text": "Understanding is a three-edged sword.",
-      "source": "Babylon 5"
-    },
-    {
-      "text": "The enemy's gate is down.",
-      "source": "Ender's Game"
     },
     {
       "text": "Does this unit have a soul?",
@@ -755,10 +723,6 @@
     },
     {
       "text": "All that you touch, you change. All that you change, changes you.",
-      "source": "O. Butler"
-    },
-    {
-      "text": "The only lasting truth is change. God is change.",
       "source": "O. Butler"
     },
     {
@@ -840,6 +804,186 @@
     {
       "text": "There ain't no such thing as a free lunch.",
       "source": "Heinlein"
+    },
+    {
+      "text": "Perhaps it is impossible to wear an identity without becoming what you pretend to be.",
+      "source": "Ender's Game"
+    },
+    {
+      "text": "Human beings are free except when humanity needs them.",
+      "source": "Ender's Game"
+    },
+    {
+      "text": "Sometimes lies were more dependable than the truth.",
+      "source": "Ender's Game"
+    },
+    {
+      "text": "No human being, when you understand his desires, is worthless.",
+      "source": "Speaker"
+    },
+    {
+      "text": "We question all our beliefs, except for the ones we really believe.",
+      "source": "Speaker"
+    },
+    {
+      "text": "The essence of training is to allow error without consequence.",
+      "source": "O. S. Card"
+    },
+    {
+      "text": "The sleeper must awaken.",
+      "source": "Dune"
+    },
+    {
+      "text": "Plans within plans within plans.",
+      "source": "Dune"
+    },
+    {
+      "text": "A process cannot be understood by stopping it.",
+      "source": "Dune"
+    },
+    {
+      "text": "Knowing where the trap is is the first step in evading it.",
+      "source": "Dune"
+    },
+    {
+      "text": "Survival is the ability to swim in strange water.",
+      "source": "F. Herbert"
+    },
+    {
+      "text": "It pays to be obvious, especially if you have a reputation for subtlety.",
+      "source": "Foundation"
+    },
+    {
+      "text": "The easiest way to solve a problem is to deny it exists.",
+      "source": "Asimov"
+    },
+    {
+      "text": "Science is a mechanism for testing your thoughts against the universe.",
+      "source": "Asimov"
+    },
+    {
+      "text": "The stars are not for man.",
+      "source": "A. C. Clarke"
+    },
+    {
+      "text": "The Ramans do everything in threes.",
+      "source": "Rama"
+    },
+    {
+      "text": "Sooner or later, everything happens.",
+      "source": "A. C. Clarke"
+    },
+    {
+      "text": "No one of intelligence resents the inevitable.",
+      "source": "A. C. Clarke"
+    },
+    {
+      "text": "You cannot crush ideas by suppressing them. You can only crush them by ignoring them.",
+      "source": "U. Le Guin"
+    },
+    {
+      "text": "To make a thief, make an owner; to create crime, create laws.",
+      "source": "U. Le Guin"
+    },
+    {
+      "text": "Change is freedom, change is life.",
+      "source": "U. Le Guin"
+    },
+    {
+      "text": "We are always getting away from the present moment.",
+      "source": "H. G. Wells"
+    },
+    {
+      "text": "It sounds plausible enough tonight, but wait until tomorrow.",
+      "source": "H. G. Wells"
+    },
+    {
+      "text": "Words can be like X-rays if you use them properly.",
+      "source": "A. Huxley"
+    },
+    {
+      "text": "Facts do not cease to exist because they are ignored.",
+      "source": "A. Huxley"
+    },
+    {
+      "text": "I am Ubik. Before the universe was, I am.",
+      "source": "Ubik"
+    },
+    {
+      "text": "It is sometimes an appropriate response to reality to go insane.",
+      "source": "P. K. Dick"
+    },
+    {
+      "text": "Sometimes dreams are wiser than waking.",
+      "source": "P. K. Dick"
+    },
+    {
+      "text": "The impossible often has a kind of integrity which the merely improbable lacks.",
+      "source": "D. Adams"
+    },
+    {
+      "text": "I would far rather be happy than right any day.",
+      "source": "D. Adams"
+    },
+    {
+      "text": "For a moment, nothing happened. Then, after a second or so, nothing continued to happen.",
+      "source": "D. Adams"
+    },
+    {
+      "text": "Doors and corners, kid. That is where they get you.",
+      "source": "The Expanse"
+    },
+    {
+      "text": "If life transcends death, then I will seek for you there.",
+      "source": "The Expanse"
+    },
+    {
+      "text": "If I destroy you, what business is it of yours?",
+      "source": "Dark Forest"
+    },
+    {
+      "text": "Weakness and ignorance are not barriers to survival, but arrogance is.",
+      "source": "Death's End"
+    },
+    {
+      "text": "I was having an emotion, and I hate that.",
+      "source": "Murderbot"
+    },
+    {
+      "text": "As a heartless killing machine, I was a terrible failure.",
+      "source": "Murderbot"
+    },
+    {
+      "text": "Past and future are the same, and we cannot change either, only know them more fully.",
+      "source": "Ted Chiang"
+    },
+    {
+      "text": "Nothing erases the past. There is repentance, atonement, and forgiveness.",
+      "source": "Ted Chiang"
+    },
+    {
+      "text": "Happiness for everybody, free, and no one will go away unsatisfied.",
+      "source": "Strugatsky"
+    },
+    {
+      "text": "I am free because I alone am morally responsible for everything I do.",
+      "source": "Heinlein"
+    },
+    {
+      "text": "One man's theology is another man's belly laugh.",
+      "source": "Heinlein"
+    },
+    {
+      "text": "A book is a loaded gun in the house next door.",
+      "source": "Bradbury"
+    },
+    {
+      "text": "We are what we pretend to be, so we must be careful what we pretend to be.",
+      "source": "Vonnegut"
+    },
+    {
+      "text": "The purpose of human life is to love whoever is around to be loved.",
+      "source": "Vonnegut"
     }
   ]
 }
