@@ -167,7 +167,8 @@
             with different alive and dead rules, create their own seed states, OTA updates, and a few other things.
         </li>
         <li>
-            Add HTTP capture portal to get the ESP32-S3 on the user's local network.
+            Add HTTP capture portal to get the ESP32-S3 on the user's local network. Done, see the
+            <a class="anchor" href="/gol/setup">setup guide</a>.
         </li>
         <li>
             Probably need another board spin for electrostatic protection.
